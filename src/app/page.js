@@ -29,7 +29,7 @@ export default function Home() {
 
                 {sm && (
                     <Zoom>
-                        <img src="./avatar2.png" className="h-[220px] hover:h-[230px] transition-all"/>
+                        <img src="./avatar2.png" className="h-[220px]"/>
                     </Zoom>
                 )}
             </header>
