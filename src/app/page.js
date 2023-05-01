@@ -5,9 +5,10 @@ import ContactMe from '@/components/ContactMe';
 import Footer from '@/components/Footer';
 import Zoom from 'react-reveal/Zoom';
 import Bounce from 'react-reveal/Bounce';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 export default function Home() {
-    var sm = Number(window.screen.width) > 640;
+    const sm = useMediaQuery('(min-width:640px)');
 
     return (
         <>

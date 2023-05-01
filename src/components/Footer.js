@@ -5,9 +5,10 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import Link from 'next/link';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 const Footer = () => {
-    var sm = Number(window.screen.width) > 640;
+    const sm = useMediaQuery('(min-width:640px)');
 
     return (
         <footer
