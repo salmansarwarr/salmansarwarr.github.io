@@ -20,7 +20,6 @@ import project19 from './images/project19.png';
 import project20 from './images/project20.png';
 import project21 from './images/project21.png';
 import project22 from './images/project22.png';
-import project23 from './images/project23.png';
 
 export const projects = [
     {
@@ -173,20 +172,6 @@ export const projects = [
     {
         id: 22,
         image: project22,
-        title: 'CRUD App (NoSql)',
-        tags: ['nextjs', 'mongodb', 'full-stack'],
-        link: 'https://crud-app-rouge.vercel.app/',
-    },
-    {
-        id: 23,
-        image: project22,
-        title: 'CRUD App (Sql)',
-        tags: ['nextjs', 'mysql', 'full-stack'],
-        link: 'https://crud-app-rouge.vercel.app/',
-    },
-    {
-        id: 24,
-        image: project23,
         title: 'Goals App',
         tags: ['mern', 'full-stack', 'css'],
         link: 'https://goals-mern-app.vercel.app',
