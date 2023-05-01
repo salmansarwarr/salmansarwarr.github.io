@@ -2,6 +2,11 @@ import GoBack from '@/components/GoBack';
 import Service from '@/components/Service';
 import { services } from '@/data/services';
 
+export const metadata = {
+    title: 'Services',
+    description: 'web developer portfolio services',
+};
+
 const page = () => {
     const reversedServices = [...services].reverse();
 
