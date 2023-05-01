@@ -2,26 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* BOUNCING ENTRANCE ANIMATION */
+@keyframes bounce-entrance {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.bounce-in {
+    animation-name: bounce-entrance;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* ZOOM IN ENTRANCE ANIMATION */
+@keyframes zoom-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.zoom-in {
+    animation-name: zoom-in;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+/* BOUNCE LEFT  */
+.box {
+    animation-name: bounce-left;
+    animation-duration: 1s;
+}
+
+/* define the animation */
+@keyframes bounce-left {
+    0% {
+        transform: translateX(-200%);
+    }
+    60% {
+        transform: translateX(25%);
+    }
+    75% {
+        transform: translateX(-10%);
+    }
+    90% {
+        transform: translateX(5%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
 }
