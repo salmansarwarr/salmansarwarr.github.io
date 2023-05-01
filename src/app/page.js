@@ -29,7 +29,7 @@ export default function Home() {
 
                 {sm && (
                     <Zoom>
-                        <img src="./avatar2.png" className="h-[220px]" />
+                        <img src="./avatar2.png" className="h-[220px] hover:h-[230px] transition-all"/>
                     </Zoom>
                 )}
             </header>
@@ -60,7 +60,7 @@ export default function Home() {
                         About Me
                     </h1>
                 </Bounce>
-                <Zoom>{!sm && <img src="./avatar.png" alt="avatar" />}</Zoom>
+                <Zoom>{!sm && <img src="./avatar.png" alt="avatar"/>}</Zoom>
                 <Bounce top>
                     <p className="text-[8px] xs:text-[20px] text-center w-[85%]">
                         Hello there, I am a skilled web developer with a passion

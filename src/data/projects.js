@@ -173,16 +173,16 @@ export const projects = [
     {
         id: 22,
         image: project22,
-        title: 'CRUD App',
+        title: 'CRUD App (NoSql)',
         tags: ['nextjs', 'mongodb', 'full-stack'],
-        link: 'https://gpt-3-landing-page-seven.vercel.app',
+        link: 'https://crud-app-rouge.vercel.app/',
     },
     {
         id: 23,
         image: project22,
-        title: 'CRUD App',
+        title: 'CRUD App (Sql)',
         tags: ['nextjs', 'mysql', 'full-stack'],
-        link: 'https://gpt-3-landing-page-seven.vercel.app',
+        link: 'https://crud-app-rouge.vercel.app/',
     },
     {
         id: 24,
