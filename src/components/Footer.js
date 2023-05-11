@@ -43,7 +43,7 @@ const Footer = () => {
                         className="w-[19.28px] sm:w-auto sm:h-[40px] xs:h-[22px] h-[19.17px]"
                     />
                 </Link>
-                <Link href="https://drive.google.com/file/d/1zzB11uZmpKXRSftkIF2VJ6ppXc_bAwq3/view?pli=1" target="_blank">
+                <Link href="https://drive.google.com/file/d/10OMGq78jcXn73PaCqpvgBS3Sn_hNbIiN/view" target="_blank">
                     <img
                         src='./cv.png'
                         className="w-[19.28px] sm:w-auto sm:h-[40px] xs:h-[22px] h-[19.17px]"
