@@ -20,6 +20,7 @@ import project19 from './images/project19.png';
 import project20 from './images/project20.png';
 import project21 from './images/project21.png';
 import project22 from './images/project22.png';
+import project23 from './images/project23.png';
 
 export const projects = [
     {
@@ -175,5 +176,12 @@ export const projects = [
         title: 'Goals App',
         tags: ['mern', 'full-stack', 'css'],
         link: 'https://goals-mern-app.vercel.app',
+    },
+    {
+        id: 23,
+        image: project23,
+        title: 'Memories App',
+        tags: ['mern', 'full-stack', 'material-ui', 'chip-input'],
+        link: 'https://memories-salman.vercel.app',
     },
 ];
