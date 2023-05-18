@@ -22,6 +22,7 @@ const Projects = () => {
                             image={proj.image}
                             tags={proj.tags}
                             link={proj.link}
+                            git={proj.git}
                         />
                     ) : (
                         proj.tags.includes(tech) && (
@@ -31,6 +32,7 @@ const Projects = () => {
                                 image={proj.image}
                                 tags={proj.tags}
                                 link={proj.link}
+                                git={proj.git}
                             />
                         )
                     )

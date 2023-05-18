@@ -29,6 +29,7 @@ export const projects = [
         title: 'Tugboat Animation',
         tags: ['html', 'css', 'animation'],
         link: 'https://tugboatanimation-salman.firebaseapp.com/',
+        git: 'https://github.com/salmansarwarr/Tugboat-Animation',
     },
     {
         id: 2,
@@ -36,6 +37,7 @@ export const projects = [
         title: 'Simply Recipies',
         tags: ['html', 'css', 'javascript'],
         link: 'https://simplyrecipes-salman.firebaseapp.com/index.html',
+        git: 'https://github.com/salmansarwarr?tab=repositories',
     },
     {
         id: 3,
@@ -43,6 +45,7 @@ export const projects = [
         title: 'Quiz',
         tags: ['html', 'css', 'javascript'],
         link: 'https://quizwebsite-salman.firebaseapp.com',
+        git: 'https://github.com/salmansarwarr?tab=repositories',
     },
     {
         id: 4,
@@ -50,6 +53,7 @@ export const projects = [
         title: 'PanaCloud',
         tags: ['html', 'css', 'javascript'],
         link: 'https://panacloud-salman.web.app',
+        git: 'https://github.com/salmansarwarr?tab=repositories',
     },
     {
         id: 5,
@@ -57,6 +61,7 @@ export const projects = [
         title: 'Netflix Clone',
         tags: ['html', 'css', 'javascript', 'clone'],
         link: 'https://netflixclone-salman.web.app',
+        git: 'https://github.com/salmansarwarr/NetflixClone',
     },
     {
         id: 6,
@@ -64,6 +69,7 @@ export const projects = [
         title: 'Instagram Clone',
         tags: ['html', 'css', 'javascript', 'clone'],
         link: 'https://instagramclone-salman.web.app',
+        git: 'https://github.com/salmansarwarr?tab=repositories',
     },
     {
         id: 7,
@@ -71,6 +77,7 @@ export const projects = [
         title: 'Frontend Bootcamp',
         tags: ['html', 'css', 'javascript', 'bootstrap'],
         link: 'https://frontendbootcamp-salman.firebaseapp.com',
+        git: 'https://github.com/salmansarwarr?tab=repositories',
     },
     {
         id: 8,
@@ -78,6 +85,7 @@ export const projects = [
         title: 'Github user finder',
         tags: ['html', 'css', 'javascript', 'clone'],
         link: 'https://githubclone-salman.netlify.app',
+        git: 'https://github.com/salmansarwarr/Github-clone',
     },
     {
         id: 9,
@@ -85,6 +93,7 @@ export const projects = [
         title: 'Pokemon app',
         tags: ['reactjs', 'scss'],
         link: 'https://pokemon-salman.netlify.app',
+        git: 'https://github.com/salmansarwarr/Pokemon-app',
     },
     {
         id: 10,
@@ -92,6 +101,7 @@ export const projects = [
         title: 'Fake Shop',
         tags: ['reactjs', 'redux', 'scss', 'e-commerce'],
         link: 'https://fakeshop-salman.netlify.app',
+        git: 'https://github.com/salmansarwarr/FakeShop',
     },
     {
         id: 11,
@@ -99,6 +109,7 @@ export const projects = [
         title: 'Shoe Store',
         tags: ['reactjs', 'redux', 'scss', 'e-commerce'],
         link: 'https://shoestore-salman.netlify.app',
+        git: 'https://github.com/salmansarwarr/ShoeStore',
     },
     {
         id: 12,
@@ -106,6 +117,7 @@ export const projects = [
         title: 'Image Finder',
         tags: ['reactjs', 'redux', 'material-ui'],
         link: 'https://image-finder-salman.netlify.app',
+        git: 'https://github.com/salmansarwarr/Image-finder',
     },
     {
         id: 13,
@@ -113,6 +125,7 @@ export const projects = [
         title: 'Netflix Clone',
         tags: ['reactjs', 'scss', 'clone'],
         link: 'https://netflixclone-salman.netlify.app',
+        git: 'https://github.com/salmansarwarr/NetflixClone-2',
     },
     {
         id: 14,
@@ -120,27 +133,31 @@ export const projects = [
         title: 'Youtube Clone',
         tags: ['reactjs', 'material-ui', 'scss', 'clone'],
         link: 'https://youtubeclone-salman.netlify.app',    
+        git: 'https://github.com/salmansarwarr/YoutubeClone',
     },
     {
         id: 15,
         image: project15,
         title: 'Expense Tracker',
         tags: ['reactjs', 'redux', 'scss', 'formik', 'e-commerce'],
-        link: 'https://youtubeclone-salman.netlify.app',    
+        link: 'https://youtubeclone-salman.netlify.app', 
+        git: 'https://github.com/salmansarwarr/Expense-tracker',   
     },
     {
         id: 16,
         image: project16,
         title: 'Quiz',
         tags: ['reactjs', 'material-ui', 'typescript'],
-        link: 'https://quizusingtypescript-salman.netlify.app',     
+        link: 'https://quizusingtypescript-salman.netlify.app',  
+        git: 'https://github.com/salmansarwarr/Quiz',   
     },
     {
         id: 17,
         image: project17,
         title: 'World Ranks',
         tags: ['nextjs', 'module-css'],
-        link: 'https://world-ranks-salman.vercel.app',     
+        link: 'https://world-ranks-salman.vercel.app',   
+        git: 'https://github.com/salmansarwarr/WorldRanks',  
     },
     {
         id: 18,
@@ -148,6 +165,7 @@ export const projects = [
         title: 'Real State',
         tags: ['nextjs', 'chakra-ui'],
         link: 'https://real-state-salman.vercel.app',
+        git: 'https://github.com/salmansarwarr/RealState',
     },
     {
         id: 19,
@@ -155,6 +173,7 @@ export const projects = [
         title: 'Google Clone',
         tags: ['reactjs', 'scss', 'clone'],
         link: 'https://googleclone-salman.netlify.app',
+        git: 'https://github.com/salmansarwarr/GoogleClone',
     },
     {
         id: 20,
@@ -162,6 +181,7 @@ export const projects = [
         title: 'Data Analytics',
         tags: ['reactjs', 'tailwind-css'],
         link: 'https://dataanalytics-salman.netlify.app',
+        git: 'https://github.com/salmansarwarr/dataAnalytics-tailwindCss',
     },
     {
         id: 21,
@@ -169,6 +189,7 @@ export const projects = [
         title: 'GPT Landing Page',
         tags: ['nextjs', 'tailwind-css'],
         link: 'https://gpt-3-landing-page-seven.vercel.app',
+        git: 'https://github.com/salmansarwarr/GPT-3-landing-page',
     },
     {
         id: 22,
@@ -176,6 +197,7 @@ export const projects = [
         title: 'Goals App',
         tags: ['mern', 'full-stack', 'css'],
         link: 'https://goals-mern-app.vercel.app',
+        git: 'https://github.com/salmansarwarr/Goals-mern-app',
     },
     {
         id: 23,
@@ -183,5 +205,6 @@ export const projects = [
         title: 'Memories App',
         tags: ['mern', 'full-stack', 'material-ui', 'chip-input'],
         link: 'https://memories-salman.vercel.app',
+        git: 'https://github.com/salmansarwarr/Memories-mern-app',
     },
 ];

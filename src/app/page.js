@@ -1,14 +1,14 @@
-'use client';
+"use client";
 
-import Buttons from '@/components/Buttons';
-import ContactMe from '@/components/ContactMe';
-import Footer from '@/components/Footer';
-import Zoom from 'react-reveal/Zoom';
-import Bounce from 'react-reveal/Bounce';
-import useMediaQuery from '@mui/material/useMediaQuery';
+import Buttons from "@/components/Buttons";
+import ContactMe from "@/components/ContactMe";
+import Footer from "@/components/Footer";
+import Zoom from "react-reveal/Zoom";
+import Bounce from "react-reveal/Bounce";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 export default function Home() {
-    const sm = useMediaQuery('(min-width:640px)');
+    const sm = useMediaQuery("(min-width:640px)");
 
     return (
         <>
@@ -29,7 +29,7 @@ export default function Home() {
 
                 {sm && (
                     <Zoom>
-                        <img src="./avatar2.png" className="h-[220px]"/>
+                        <img src="./avatar2.png" className="h-[220px]" />
                     </Zoom>
                 )}
             </header>
@@ -60,7 +60,7 @@ export default function Home() {
                         About Me
                     </h1>
                 </Bounce>
-                <Zoom>{!sm && <img src="./avatar.png" alt="avatar"/>}</Zoom>
+                <Zoom>{!sm && <img src="./avatar.png" alt="avatar" />}</Zoom>
                 <Bounce top>
                     <p className="text-[8px] xs:text-[20px] text-center w-[85%]">
                         Hello there, I am a skilled web developer with a passion
