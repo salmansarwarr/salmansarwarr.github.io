@@ -17,7 +17,7 @@ const Project = ({ title, image, tags, link, git }) => {
             <div className="border border-white mt-1"></div>
             <div className="flex flex-col gap-2 px-3 py-4 pb-5">
                 <h1 className="text-[22px] font-semibold">{title}</h1>
-                <p className="text-[15px]">
+                <p className="text-[15px] h-[45px]">
                     {tags.map((tag, i) =>
                         i !== tags.length - 1 ? `${tag} | ` : `${tag}`
                     )}
@@ -33,7 +33,7 @@ const Project = ({ title, image, tags, link, git }) => {
                     </Link>
                     <IconButton color="inherit">
                         <Link href={git}>
-                            <GitHubIcon className="w-auto h-[35px]" />
+                            <GitHubIcon fontSize="large" />
                         </Link>
                     </IconButton>
                 </div>
