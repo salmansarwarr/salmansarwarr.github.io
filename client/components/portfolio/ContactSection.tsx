@@ -61,7 +61,7 @@ export default function ContactSection() {
                   Get In Touch
                 </CardTitle>
                 <CardDescription>
-                  I'm always interested in new opportunities and exciting projects. 
+                  I'm always interested in new opportunities and exciting projects.
                   Whether you need a consultant, developer, or technical advisor, let's connect!
                 </CardDescription>
               </CardHeader>
@@ -93,7 +93,7 @@ export default function ContactSection() {
               <CardContent>
                 <div className="flex flex-wrap gap-2">
                   {services.map((service, index) => (
-                    <Badge key={index} variant="outline" className="text-xs">
+                    <Badge key={index} variant="outline" className="text-xs tech-badge-interactive">
                       {service}
                     </Badge>
                   ))}
@@ -136,33 +136,33 @@ export default function ContactSection() {
                   <Input id="email" type="email" placeholder="your@email.com" />
                 </div>
               </div>
-              
+
               <div className="space-y-2">
                 <label htmlFor="subject" className="text-sm font-medium text-foreground">
                   Subject
                 </label>
                 <Input id="subject" placeholder="Project consultation" />
               </div>
-              
+
               <div className="space-y-2">
                 <label htmlFor="budget" className="text-sm font-medium text-foreground">
                   Project Budget (Optional)
                 </label>
                 <Input id="budget" placeholder="$10,000 - $50,000" />
               </div>
-              
+
               <div className="space-y-2">
                 <label htmlFor="message" className="text-sm font-medium text-foreground">
                   Message
                 </label>
-                <Textarea 
-                  id="message" 
+                <Textarea
+                  id="message"
                   placeholder="Tell me about your project, timeline, and requirements..."
                   className="min-h-[120px]"
                 />
               </div>
-              
-              <Button className="w-full" size="lg">
+
+              <Button className="w-full interactive-gradient glow-on-hover border-0 transition-all duration-300" size="lg">
                 <Send className="mr-2 h-4 w-4" />
                 Send Message
               </Button>
