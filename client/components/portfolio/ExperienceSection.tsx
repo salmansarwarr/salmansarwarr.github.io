@@ -11,25 +11,27 @@ import { Calendar, MapPin, Building, Award } from "lucide-react";
 export default function ExperienceSection() {
   const experiences = [
     {
-      title: "Senior Blockchain Developer",
-      company: "CryptoTech Solutions",
+      title: "Freelance Blockchain & Web Developer",
+      company: "Global Client Base",
       location: "Remote",
-      duration: "2022 - Present",
-      type: "Full-time",
+      duration: "Nov 2023 - Present",
+      type: "Freelance",
       description:
-        "Leading blockchain development team, architecting DeFi protocols and smart contracts. Responsible for security audits and gas optimization strategies.",
+        "Delivering comprehensive blockchain and Web3 solutions for international clients with focus on dApp development and smart contract implementation.",
       achievements: [
-        "Built DeFi protocol with $2M+ TVL",
-        "Reduced gas costs by 40% through optimization",
-        "Led team of 5 developers",
-        "Implemented security best practices",
+        "Delivered 30+ blockchain and Web3 projects maintaining 4.8/5 client satisfaction rating",
+        "Built production-ready dApps using Solidity (Ethereum) and Anchor framework (Solana)",
+        "Developed smart contracts handling $500K+ in transaction volume with zero security incidents",
+        "Integrated Web3 wallets (MetaMask, Phantom, WalletConnect) improving user onboarding by 40%",
+        "Collaborated with cross-functional remote teams across multiple time zones",
       ],
       technologies: [
         "Solidity",
-        "Ethereum",
-        "DeFi",
-        "Security Audits",
-        "Team Leadership",
+        "Rust",
+        "React.js",
+        "Next.js",
+        "Anchor",
+        "Web3 Wallets",
       ],
     },
     {
