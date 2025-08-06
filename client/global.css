@@ -18,7 +18,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 217 91% 60%;
+    --primary: 330 81% 60%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -39,15 +39,15 @@
 
     --radius: 0.5rem;
 
-    /* Interactive Colors - Blue/Teal/Gold Theme */
-    --primary-hover: 217 91% 55%;
-    --primary-glow: 217 91% 60%;
-    --accent-blue: 217 91% 60%;
-    --accent-teal: 189 85% 52%;
-    --accent-gold: 45 93% 58%;
-    --accent-navy: 221 83% 53%;
-    --gradient-start: 217 91% 60%;
-    --gradient-end: 189 85% 52%;
+    /* Interactive Colors - Pink/Rose/Purple Theme */
+    --primary-hover: 330 81% 55%;
+    --primary-glow: 330 81% 60%;
+    --accent-pink: 330 81% 60%;
+    --accent-rose: 351 83% 61%;
+    --accent-purple: 293 84% 64%;
+    --accent-coral: 14 100% 71%;
+    --gradient-start: 330 81% 60%;
+    --gradient-end: 351 83% 61%;
 
     --sidebar-background: 0 0% 98%;
 
@@ -76,7 +76,7 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 217 91% 65%;
+    --primary: 330 81% 65%;
     --primary-foreground: 222.2 47.4% 11.2%;
 
     --secondary: 217.2 32.6% 17.5%;
@@ -95,15 +95,15 @@
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
 
-    /* Interactive Colors Dark - Blue/Teal/Gold Theme */
-    --primary-hover: 217 91% 70%;
-    --primary-glow: 217 91% 65%;
-    --accent-blue: 217 91% 65%;
-    --accent-teal: 189 85% 57%;
-    --accent-gold: 45 93% 63%;
-    --accent-navy: 221 83% 58%;
-    --gradient-start: 217 91% 65%;
-    --gradient-end: 189 85% 57%;
+    /* Interactive Colors Dark - Pink/Rose/Purple Theme */
+    --primary-hover: 330 81% 70%;
+    --primary-glow: 330 81% 65%;
+    --accent-pink: 330 81% 65%;
+    --accent-rose: 351 83% 66%;
+    --accent-purple: 293 84% 69%;
+    --accent-coral: 14 100% 76%;
+    --gradient-start: 330 81% 65%;
+    --gradient-end: 351 83% 66%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;

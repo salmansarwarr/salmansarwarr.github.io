@@ -44,7 +44,7 @@ export default function AboutSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {expertise.map((item, index) => {
             const IconComponent = item.icon;
-            const colors = ['interactive-blue', 'interactive-teal', 'interactive-gold', 'interactive-navy'];
+            const colors = ['interactive-pink', 'interactive-rose', 'interactive-purple', 'interactive-coral'];
             const currentColor = colors[index % colors.length];
             return (
               <Card key={index} className={`project-card-interactive border-l-4 border-l-${currentColor} card-bg-enhanced`}>

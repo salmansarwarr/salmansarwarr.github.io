@@ -39,8 +39,8 @@ export default function Footer() {
     <footer className="footer-bg-rich border-t border-border/30 relative overflow-hidden">
       {/* Decorative background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-0 left-1/4 w-48 h-48 bg-interactive-blue/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-1/4 w-48 h-48 bg-interactive-teal/5 rounded-full blur-3xl"></div>
+        <div className="absolute top-0 left-1/4 w-48 h-48 bg-interactive-pink/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-1/4 w-48 h-48 bg-interactive-rose/5 rounded-full blur-3xl"></div>
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10">
@@ -48,10 +48,10 @@ export default function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <div className="p-2 bg-interactive-blue/10 rounded-lg">
-                <Code className="h-6 w-6 text-interactive-blue" />
+              <div className="p-2 bg-interactive-pink/10 rounded-lg">
+                <Code className="h-6 w-6 text-interactive-pink" />
               </div>
-              <span className="font-bold text-lg bg-gradient-to-r from-interactive-blue to-interactive-teal bg-clip-text text-transparent">BlockchainDev</span>
+              <span className="font-bold text-lg bg-gradient-to-r from-interactive-pink to-interactive-rose bg-clip-text text-transparent">BlockchainDev</span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Full Stack Blockchain Developer specializing in DeFi, smart contracts,

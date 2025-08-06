@@ -37,10 +37,10 @@ export default function Navigation() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-2">
-            <div className="p-2 bg-interactive-blue/10 rounded-lg glow-on-hover transition-all duration-300">
-              <Code className="h-6 w-6 text-interactive-blue" />
+            <div className="p-2 bg-interactive-pink/10 rounded-lg glow-on-hover transition-all duration-300">
+              <Code className="h-6 w-6 text-interactive-pink" />
             </div>
-            <span className="font-bold text-lg bg-gradient-to-r from-interactive-blue to-interactive-teal bg-clip-text text-transparent">BlockchainDev</span>
+            <span className="font-bold text-lg bg-gradient-to-r from-interactive-pink to-interactive-rose bg-clip-text text-transparent">BlockchainDev</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -57,10 +57,10 @@ export default function Navigation() {
           </div>
 
           <div className="hidden md:flex items-center gap-3">
-            <Button variant="ghost" size="icon" className="hover:bg-interactive-blue/20 hover:text-interactive-blue glow-on-hover transition-all duration-300">
+            <Button variant="ghost" size="icon" className="hover:bg-interactive-pink/20 hover:text-interactive-pink glow-on-hover transition-all duration-300">
               <Github className="h-4 w-4" />
             </Button>
-            <Button variant="ghost" size="icon" className="hover:bg-interactive-teal/20 hover:text-interactive-teal glow-on-hover transition-all duration-300">
+            <Button variant="ghost" size="icon" className="hover:bg-interactive-rose/20 hover:text-interactive-rose glow-on-hover transition-all duration-300">
               <Linkedin className="h-4 w-4" />
             </Button>
             <Button size="sm" className="interactive-gradient glow-on-hover border-0 transition-all duration-300">
