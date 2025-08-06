@@ -37,10 +37,10 @@ export default function Navigation() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-2">
-            <div className="p-2 bg-primary/10 rounded-lg">
-              <Code className="h-6 w-6 text-primary" />
+            <div className="p-2 bg-interactive-purple/10 rounded-lg glow-on-hover transition-all duration-300">
+              <Code className="h-6 w-6 text-interactive-purple" />
             </div>
-            <span className="font-bold text-lg text-foreground">BlockchainDev</span>
+            <span className="font-bold text-lg text-foreground interactive-gradient bg-clip-text text-transparent">BlockchainDev</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -49,7 +49,7 @@ export default function Navigation() {
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="text-muted-foreground hover:text-primary transition-colors text-sm font-medium"
+                className="text-muted-foreground nav-link-interactive text-sm font-medium"
               >
                 {item.name}
               </button>
@@ -57,13 +57,13 @@ export default function Navigation() {
           </div>
 
           <div className="hidden md:flex items-center gap-3">
-            <Button variant="ghost" size="icon">
+            <Button variant="ghost" size="icon" className="hover:bg-interactive-purple/20 hover:text-interactive-purple glow-on-hover transition-all duration-300">
               <Github className="h-4 w-4" />
             </Button>
-            <Button variant="ghost" size="icon">
+            <Button variant="ghost" size="icon" className="hover:bg-interactive-cyan/20 hover:text-interactive-cyan glow-on-hover transition-all duration-300">
               <Linkedin className="h-4 w-4" />
             </Button>
-            <Button size="sm">
+            <Button size="sm" className="interactive-gradient glow-on-hover border-0 transition-all duration-300">
               <Mail className="mr-2 h-4 w-4" />
               Contact
             </Button>
