@@ -58,19 +58,19 @@ export default function SkillsSection() {
   ];
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 section-bg-primary">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Skills & Expertise</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            A comprehensive skill set covering the entire blockchain development stack, 
+            A comprehensive skill set covering the entire blockchain development stack,
             from smart contracts to user interfaces.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
           {skillCategories.map((category, index) => (
-            <Card key={index} className="hover:shadow-lg transition-shadow">
+            <Card key={index} className="hover:shadow-lg transition-shadow card-bg-gradient project-card-interactive">
               <CardHeader>
                 <CardTitle className="text-xl text-primary">{category.title}</CardTitle>
               </CardHeader>
@@ -89,7 +89,7 @@ export default function SkillsSection() {
           ))}
         </div>
 
-        <Card className="bg-gradient-to-r from-primary/5 to-primary/10">
+        <Card className="card-bg-enhanced interactive-gradient-hover glow-on-hover">
           <CardHeader>
             <CardTitle className="text-center text-xl">Certifications & Achievements</CardTitle>
           </CardHeader>
