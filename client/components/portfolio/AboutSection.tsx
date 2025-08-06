@@ -47,7 +47,7 @@ export default function AboutSection() {
   ];
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 section-bg-secondary doodle-elements relative">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 section-bg-secondary blockchain-bg relative">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">

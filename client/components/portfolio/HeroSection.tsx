@@ -4,7 +4,7 @@ import { Github, Linkedin, Mail, Download, ExternalLink } from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <section className="min-h-screen flex items-center justify-center hero-enhanced doodle-squiggles px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+    <section className="min-h-screen flex items-center justify-center hero-enhanced blockchain-bg px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       {/* Decorative background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-interactive-pink/10 rounded-full blur-3xl animate-pulse"></div>
