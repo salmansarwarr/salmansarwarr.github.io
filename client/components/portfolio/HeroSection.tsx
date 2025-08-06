@@ -4,8 +4,15 @@ import { Github, Linkedin, Mail, Download, ExternalLink } from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <section className="min-h-screen flex items-center justify-center hero-gradient px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto text-center">
+    <section className="min-h-screen flex items-center justify-center hero-enhanced px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+      {/* Decorative background elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-interactive-purple/10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-interactive-cyan/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 left-1/2 w-32 h-32 bg-interactive-emerald/10 rounded-full blur-2xl animate-pulse delay-500"></div>
+      </div>
+
+      <div className="max-w-4xl mx-auto text-center relative z-10">
         <div className="mb-8">
           <Badge variant="secondary" className="mb-4 interactive-gradient-hover transition-all duration-300 glow-on-hover">
             Available for Freelance & Full-time
