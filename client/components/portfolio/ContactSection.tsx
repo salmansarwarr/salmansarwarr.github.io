@@ -43,7 +43,7 @@ export default function ContactSection() {
   ];
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 contact-bg-special relative">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Let's Work Together</h2>
@@ -54,7 +54,7 @@ export default function ContactSection() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="space-y-8">
-            <Card>
+            <Card className="card-bg-enhanced glow-on-hover">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <MessageCircle className="h-5 w-5 text-primary" />
@@ -83,7 +83,7 @@ export default function ContactSection() {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="card-bg-gradient glow-on-hover">
               <CardHeader>
                 <CardTitle>Services Available</CardTitle>
                 <CardDescription>
@@ -114,7 +114,7 @@ export default function ContactSection() {
             </Card>
           </div>
 
-          <Card>
+          <Card className="card-bg-enhanced border-gradient-hover">
             <CardHeader>
               <CardTitle>Send a Message</CardTitle>
               <CardDescription>
