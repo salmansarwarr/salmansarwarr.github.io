@@ -112,11 +112,11 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Mail className="h-4 w-4" />
-                <span>dev@blockchainexpert.com</span>
+                <span>muhammadsalmansarwar32@gmail.com</span>
               </div>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Globe className="h-4 w-4" />
-                <span>Available Worldwide</span>
+                <span>Karachi, Pakistan</span>
               </div>
             </div>
             <Button className="w-full sm:w-auto">
@@ -130,7 +130,7 @@ export default function Footer() {
 
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
           <div>
-            © {currentYear} BlockchainDev Portfolio. All rights reserved.
+            © {currentYear} Sulman Sarwar. All rights reserved.
           </div>
           <div className="flex gap-6">
             <button className="hover:text-primary transition-colors">

@@ -16,27 +16,27 @@ export default function ContactSection() {
     {
       icon: Mail,
       label: "Email",
-      value: "dev@blockchainexpert.com",
-      href: "mailto:dev@blockchainexpert.com",
+      value: "muhammadsalmansarwar32@gmail.com",
+      href: "mailto:muhammadsalmansarwar32@gmail.com"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567",
+      value: "+92 315 0259301",
+      href: "tel:+923150259301"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
-      href: "#",
+      value: "Karachi, Pakistan",
+      href: "#"
     },
     {
       icon: Clock,
       label: "Timezone",
-      value: "PST (UTC-8)",
-      href: "#",
-    },
+      value: "PKT (UTC+5)",
+      href: "#"
+    }
   ];
 
   const services = [

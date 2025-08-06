@@ -91,16 +91,16 @@ export default function ExperienceSection() {
   const education = [
     {
       degree: "Bachelor of Science in Computer Science",
-      school: "University of Technology",
-      year: "2018",
-      honors: "Magna Cum Laude",
+      school: "NED University of Engineering & Technology, Karachi",
+      year: "Sep 2021 - Sep 2025",
+      honors: "CGPA: 3.44 / 4.0"
     },
     {
-      degree: "Blockchain Developer Certification",
-      school: "Ethereum Foundation",
-      year: "2020",
-      honors: "Distinguished Graduate",
-    },
+      degree: "Ethereum Developer Degree",
+      school: "LearnWeb3.io",
+      year: "2024",
+      honors: "Certified"
+    }
   ];
 
   return (

@@ -5,56 +5,56 @@ import { Progress } from "@/components/ui/progress";
 export default function SkillsSection() {
   const skillCategories = [
     {
-      title: "Blockchain & Web3",
+      title: "Blockchain & Smart Contracts",
       skills: [
-        { name: "Solidity", level: 95 },
-        { name: "Ethereum", level: 90 },
-        { name: "Web3.js/Ethers.js", level: 88 },
-        { name: "Smart Contract Security", level: 85 },
-        { name: "DeFi Protocols", level: 82 },
-        { name: "IPFS", level: 75 },
-      ],
+        { name: "Ethereum (Solidity)", level: 95 },
+        { name: "Solana (Rust/Anchor)", level: 90 },
+        { name: "Polkadot (Substrate)", level: 85 },
+        { name: "Hardhat/Truffle", level: 92 },
+        { name: "Smart Contract Testing", level: 88 },
+        { name: "Web3 Integration", level: 90 }
+      ]
     },
     {
       title: "Frontend Development",
       skills: [
-        { name: "React/Next.js", level: 92 },
+        { name: "React.js", level: 95 },
+        { name: "Next.js", level: 92 },
         { name: "TypeScript", level: 90 },
-        { name: "JavaScript", level: 95 },
-        { name: "Tailwind CSS", level: 88 },
-        { name: "React Query", level: 85 },
-        { name: "State Management", level: 87 },
-      ],
+        { name: "Redux Toolkit", level: 85 },
+        { name: "Web3 Wallets", level: 88 },
+        { name: "Responsive Design", level: 90 }
+      ]
     },
     {
-      title: "Backend & DevOps",
+      title: "Backend & Database",
       skills: [
         { name: "Node.js", level: 90 },
-        { name: "Express/Fastify", level: 85 },
-        { name: "PostgreSQL/MongoDB", level: 82 },
-        { name: "Docker", level: 80 },
-        { name: "AWS/GCP", level: 78 },
-        { name: "CI/CD", level: 75 },
-      ],
+        { name: "Express.js", level: 88 },
+        { name: "Nest.js", level: 82 },
+        { name: "PostgreSQL", level: 85 },
+        { name: "MongoDB", level: 88 },
+        { name: "Prisma ORM", level: 80 }
+      ]
     },
     {
-      title: "Tools & Frameworks",
+      title: "Testing & Deployment",
       skills: [
-        { name: "Hardhat/Foundry", level: 90 },
-        { name: "Git/GitHub", level: 95 },
-        { name: "Jest/Vitest", level: 85 },
-        { name: "GraphQL", level: 80 },
-        { name: "Prisma", level: 82 },
-        { name: "Figma", level: 70 },
-      ],
-    },
+        { name: "Hardhat Testing", level: 90 },
+        { name: "Jest", level: 85 },
+        { name: "AWS", level: 80 },
+        { name: "Vercel/Netlify", level: 92 },
+        { name: "IPFS/Pinata", level: 85 },
+        { name: "GitHub", level: 95 }
+      ]
+    }
   ];
 
   const certifications = [
-    "Ethereum Developer Certification",
-    "AWS Solutions Architect",
-    "Certified Blockchain Developer",
-    "DeFi Security Specialist",
+    "Ethereum Developer Degree - LearnWeb3.io",
+    "Solana Blockchain Developer Bootcamp - Udemy",
+    "Polkadot & Substrate Development - RiseIn",
+    "Anryton Blockchain Hackathon - 2nd Position Winner"
   ];
 
   return (
