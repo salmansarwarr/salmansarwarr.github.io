@@ -9,7 +9,7 @@ export default function Footer() {
     { icon: Github, href: "#", label: "GitHub" },
     { icon: Linkedin, href: "#", label: "LinkedIn" },
     { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Mail, href: "#", label: "Email" }
+    { icon: Mail, href: "#", label: "Email" },
   ];
 
   const quickLinks = [
@@ -17,7 +17,7 @@ export default function Footer() {
     { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
     { name: "Experience", href: "#experience" },
-    { name: "Contact", href: "#contact" }
+    { name: "Contact", href: "#contact" },
   ];
 
   const services = [
@@ -25,7 +25,7 @@ export default function Footer() {
     "DeFi Protocol Design",
     "Web3 Frontend Development",
     "Blockchain Consultation",
-    "Security Audits"
+    "Security Audits",
   ];
 
   const scrollToSection = (href: string) => {
@@ -51,17 +51,25 @@ export default function Footer() {
               <div className="p-2 bg-interactive-pink/10 rounded-lg">
                 <Code className="h-6 w-6 text-interactive-pink" />
               </div>
-              <span className="font-bold text-lg bg-gradient-to-r from-interactive-pink to-interactive-rose bg-clip-text text-transparent">BlockchainDev</span>
+              <span className="font-bold text-lg bg-gradient-to-r from-interactive-pink to-interactive-rose bg-clip-text text-transparent">
+                BlockchainDev
+              </span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Full Stack Blockchain Developer specializing in DeFi, smart contracts,
-              and Web3 applications. Building the future of decentralized technology.
+              Full Stack Blockchain Developer specializing in DeFi, smart
+              contracts, and Web3 applications. Building the future of
+              decentralized technology.
             </p>
             <div className="flex gap-2">
               {socialLinks.map((link, index) => {
                 const IconComponent = link.icon;
                 return (
-                  <Button key={index} variant="ghost" size="icon" className="hover:scale-110 transition-transform">
+                  <Button
+                    key={index}
+                    variant="ghost"
+                    size="icon"
+                    className="hover:scale-110 transition-transform"
+                  >
                     <IconComponent className="h-4 w-4" />
                     <span className="sr-only">{link.label}</span>
                   </Button>
@@ -125,8 +133,12 @@ export default function Footer() {
             © {currentYear} BlockchainDev Portfolio. All rights reserved.
           </div>
           <div className="flex gap-6">
-            <button className="hover:text-primary transition-colors">Privacy Policy</button>
-            <button className="hover:text-primary transition-colors">Terms of Service</button>
+            <button className="hover:text-primary transition-colors">
+              Privacy Policy
+            </button>
+            <button className="hover:text-primary transition-colors">
+              Terms of Service
+            </button>
           </div>
         </div>
       </div>
