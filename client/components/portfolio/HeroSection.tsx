@@ -42,25 +42,25 @@ export default function HeroSection() {
             Solidity
           </Badge>
           <Badge variant="outline" className="tech-badge-interactive">
-            Ethereum
+            Rust
           </Badge>
           <Badge variant="outline" className="tech-badge-interactive">
-            React
+            React.js
           </Badge>
           <Badge variant="outline" className="tech-badge-interactive">
-            Node.js
+            Next.js
           </Badge>
           <Badge variant="outline" className="tech-badge-interactive">
             TypeScript
           </Badge>
           <Badge variant="outline" className="tech-badge-interactive">
-            Web3.js
+            Ethereum
           </Badge>
           <Badge variant="outline" className="tech-badge-interactive">
-            DeFi
+            Solana
           </Badge>
           <Badge variant="outline" className="tech-badge-interactive">
-            Smart Contracts
+            Polkadot
           </Badge>
         </div>
 
