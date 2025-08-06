@@ -122,6 +122,53 @@
 
   body {
     @apply bg-background text-foreground;
+    position: relative;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+      /* Subtle doodle pattern */
+      radial-gradient(circle at 20% 30%, hsl(var(--accent-pink) / 0.02) 1px, transparent 1px),
+      radial-gradient(circle at 80% 70%, hsl(var(--accent-rose) / 0.02) 0.8px, transparent 0.8px),
+      radial-gradient(circle at 45% 85%, hsl(var(--accent-purple) / 0.02) 1.2px, transparent 1.2px),
+      radial-gradient(circle at 75% 15%, hsl(var(--accent-coral) / 0.02) 0.9px, transparent 0.9px),
+      /* Wavy lines */
+      linear-gradient(
+        30deg,
+        transparent 48%,
+        hsl(var(--accent-pink) / 0.005) 49%,
+        hsl(var(--accent-pink) / 0.005) 51%,
+        transparent 52%
+      ),
+      linear-gradient(
+        150deg,
+        transparent 48%,
+        hsl(var(--accent-rose) / 0.005) 49%,
+        hsl(var(--accent-rose) / 0.005) 51%,
+        transparent 52%
+      );
+    background-size:
+      60px 60px,
+      80px 80px,
+      70px 70px,
+      90px 90px,
+      200px 200px,
+      180px 180px;
+    background-position:
+      0 0,
+      30px 30px,
+      15px 45px,
+      45px 15px,
+      0 0,
+      90px 90px;
+    pointer-events: none;
+    z-index: -1;
   }
 }
 
