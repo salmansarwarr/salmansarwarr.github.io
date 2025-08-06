@@ -40,7 +40,7 @@ export default function Navigation() {
             <div className="p-2 bg-interactive-purple/10 rounded-lg glow-on-hover transition-all duration-300">
               <Code className="h-6 w-6 text-interactive-purple" />
             </div>
-            <span className="font-bold text-lg text-foreground interactive-gradient bg-clip-text text-transparent">BlockchainDev</span>
+            <span className="font-bold text-lg bg-gradient-to-r from-interactive-purple to-interactive-cyan bg-clip-text text-transparent">BlockchainDev</span>
           </div>
 
           {/* Desktop Navigation */}
