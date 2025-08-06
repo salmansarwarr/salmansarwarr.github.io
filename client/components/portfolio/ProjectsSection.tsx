@@ -55,7 +55,7 @@ export default function ProjectsSection() {
   ];
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 section-bg-tertiary relative">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Featured Projects</h2>
@@ -66,7 +66,7 @@ export default function ProjectsSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {stats.map((stat, index) => (
-            <Card key={index} className="text-center">
+            <Card key={index} className="text-center card-bg-enhanced glow-on-hover transition-all duration-300">
               <CardContent className="pt-6">
                 <div className="text-3xl font-bold text-primary mb-2">{stat.value}</div>
                 <div className="text-sm text-muted-foreground">{stat.label}</div>
@@ -81,7 +81,7 @@ export default function ProjectsSection() {
             const colors = ['interactive-purple', 'interactive-cyan', 'interactive-emerald', 'interactive-orange'];
             const currentColor = colors[index % colors.length];
             return (
-              <Card key={index} className="project-card-interactive border-gradient-hover group">
+              <Card key={index} className="project-card-interactive border-gradient-hover group card-bg-gradient">
                 <CardHeader>
                   <div className="flex items-start justify-between mb-3">
                     <div className="flex items-center gap-3">
