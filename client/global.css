@@ -134,24 +134,24 @@
     bottom: 0;
     background-image:
       /* Subtle doodle pattern */
-      radial-gradient(circle at 20% 30%, hsl(var(--accent-pink) / 0.02) 1px, transparent 1px),
-      radial-gradient(circle at 80% 70%, hsl(var(--accent-rose) / 0.02) 0.8px, transparent 0.8px),
-      radial-gradient(circle at 45% 85%, hsl(var(--accent-purple) / 0.02) 1.2px, transparent 1.2px),
-      radial-gradient(circle at 75% 15%, hsl(var(--accent-coral) / 0.02) 0.9px, transparent 0.9px),
+      radial-gradient(circle at 20% 30%, hsl(var(--accent-pink) / 0.04) 1px, transparent 1px),
+      radial-gradient(circle at 80% 70%, hsl(var(--accent-rose) / 0.03) 0.8px, transparent 0.8px),
+      radial-gradient(circle at 45% 85%, hsl(var(--accent-purple) / 0.04) 1.2px, transparent 1.2px),
+      radial-gradient(circle at 75% 15%, hsl(var(--accent-coral) / 0.03) 0.9px, transparent 0.9px),
       /* Wavy lines */
       linear-gradient(
         30deg,
-        transparent 48%,
-        hsl(var(--accent-pink) / 0.005) 49%,
-        hsl(var(--accent-pink) / 0.005) 51%,
-        transparent 52%
+        transparent 47%,
+        hsl(var(--accent-pink) / 0.02) 49%,
+        hsl(var(--accent-pink) / 0.02) 51%,
+        transparent 53%
       ),
       linear-gradient(
         150deg,
-        transparent 48%,
-        hsl(var(--accent-rose) / 0.005) 49%,
-        hsl(var(--accent-rose) / 0.005) 51%,
-        transparent 52%
+        transparent 47%,
+        hsl(var(--accent-rose) / 0.015) 49%,
+        hsl(var(--accent-rose) / 0.015) 51%,
+        transparent 53%
       );
     background-size:
       60px 60px,
@@ -355,32 +355,32 @@
   .doodle-bg-pattern {
     background-image:
       /* Squiggly lines */
-      radial-gradient(circle at 15% 25%, hsl(var(--accent-pink) / 0.03) 2px, transparent 2px),
-      radial-gradient(circle at 85% 75%, hsl(var(--accent-rose) / 0.03) 1.5px, transparent 1.5px),
-      radial-gradient(circle at 35% 85%, hsl(var(--accent-purple) / 0.03) 1px, transparent 1px),
-      radial-gradient(circle at 75% 15%, hsl(var(--accent-coral) / 0.03) 1.5px, transparent 1.5px),
+      radial-gradient(circle at 15% 25%, hsl(var(--accent-pink) / 0.08) 2px, transparent 2px),
+      radial-gradient(circle at 85% 75%, hsl(var(--accent-rose) / 0.06) 1.5px, transparent 1.5px),
+      radial-gradient(circle at 35% 85%, hsl(var(--accent-purple) / 0.05) 1px, transparent 1px),
+      radial-gradient(circle at 75% 15%, hsl(var(--accent-coral) / 0.07) 1.5px, transparent 1.5px),
       /* Wavy pattern */
       repeating-linear-gradient(
         45deg,
         transparent,
-        transparent 20px,
-        hsl(var(--accent-pink) / 0.01) 20px,
-        hsl(var(--accent-pink) / 0.01) 21px
+        transparent 30px,
+        hsl(var(--accent-pink) / 0.04) 30px,
+        hsl(var(--accent-pink) / 0.04) 32px
       ),
       repeating-linear-gradient(
         -45deg,
         transparent,
-        transparent 25px,
-        hsl(var(--accent-rose) / 0.01) 25px,
-        hsl(var(--accent-rose) / 0.01) 26px
+        transparent 40px,
+        hsl(var(--accent-rose) / 0.03) 40px,
+        hsl(var(--accent-rose) / 0.03) 42px
       ),
       /* Scattered dots */
-      radial-gradient(circle at 10% 10%, hsl(var(--accent-pink) / 0.02) 1px, transparent 1px),
-      radial-gradient(circle at 60% 30%, hsl(var(--accent-rose) / 0.02) 0.8px, transparent 0.8px),
-      radial-gradient(circle at 90% 60%, hsl(var(--accent-purple) / 0.02) 1.2px, transparent 1.2px),
-      radial-gradient(circle at 20% 80%, hsl(var(--accent-coral) / 0.02) 0.9px, transparent 0.9px),
-      radial-gradient(circle at 70% 90%, hsl(var(--accent-pink) / 0.02) 1.1px, transparent 1.1px),
-      radial-gradient(circle at 40% 60%, hsl(var(--accent-rose) / 0.02) 0.7px, transparent 0.7px);
+      radial-gradient(circle at 10% 10%, hsl(var(--accent-pink) / 0.06) 1px, transparent 1px),
+      radial-gradient(circle at 60% 30%, hsl(var(--accent-rose) / 0.05) 0.8px, transparent 0.8px),
+      radial-gradient(circle at 90% 60%, hsl(var(--accent-purple) / 0.07) 1.2px, transparent 1.2px),
+      radial-gradient(circle at 20% 80%, hsl(var(--accent-coral) / 0.05) 0.9px, transparent 0.9px),
+      radial-gradient(circle at 70% 90%, hsl(var(--accent-pink) / 0.06) 1.1px, transparent 1.1px),
+      radial-gradient(circle at 40% 60%, hsl(var(--accent-rose) / 0.04) 0.7px, transparent 0.7px);
     background-size:
       80px 80px,
       90px 90px,
@@ -422,13 +422,13 @@
     bottom: 0;
     background-image:
       /* Hand-drawn style circles */
-      radial-gradient(ellipse 12px 15px at 12% 23%, hsl(var(--accent-pink) / 0.04) 30%, transparent 30%),
-      radial-gradient(ellipse 8px 12px at 67% 45%, hsl(var(--accent-rose) / 0.04) 30%, transparent 30%),
-      radial-gradient(ellipse 10px 8px at 89% 78%, hsl(var(--accent-purple) / 0.04) 30%, transparent 30%),
-      radial-gradient(ellipse 14px 10px at 34% 67%, hsl(var(--accent-coral) / 0.04) 30%, transparent 30%),
+      radial-gradient(ellipse 12px 15px at 12% 23%, hsl(var(--accent-pink) / 0.1) 30%, transparent 30%),
+      radial-gradient(ellipse 8px 12px at 67% 45%, hsl(var(--accent-rose) / 0.08) 30%, transparent 30%),
+      radial-gradient(ellipse 10px 8px at 89% 78%, hsl(var(--accent-purple) / 0.09) 30%, transparent 30%),
+      radial-gradient(ellipse 14px 10px at 34% 67%, hsl(var(--accent-coral) / 0.07) 30%, transparent 30%),
       /* Abstract shapes */
-      conic-gradient(from 0deg at 78% 12%, hsl(var(--accent-pink) / 0.02) 0deg, transparent 45deg, hsl(var(--accent-rose) / 0.02) 90deg, transparent 135deg),
-      conic-gradient(from 45deg at 23% 89%, hsl(var(--accent-purple) / 0.02) 0deg, transparent 60deg, hsl(var(--accent-coral) / 0.02) 120deg, transparent 180deg);
+      conic-gradient(from 0deg at 78% 12%, hsl(var(--accent-pink) / 0.06) 0deg, transparent 45deg, hsl(var(--accent-rose) / 0.05) 90deg, transparent 135deg),
+      conic-gradient(from 45deg at 23% 89%, hsl(var(--accent-purple) / 0.05) 0deg, transparent 60deg, hsl(var(--accent-coral) / 0.06) 120deg, transparent 180deg);
     background-size:
       150px 150px,
       180px 180px,
@@ -453,11 +453,11 @@
     bottom: 0;
     background-image:
       /* Doodle stars */
-      radial-gradient(circle at 25% 35%, transparent 30%, hsl(var(--accent-pink) / 0.03) 30%, hsl(var(--accent-pink) / 0.03) 32%, transparent 32%),
-      radial-gradient(circle at 75% 65%, transparent 25%, hsl(var(--accent-rose) / 0.03) 25%, hsl(var(--accent-rose) / 0.03) 27%, transparent 27%),
+      radial-gradient(circle at 25% 35%, transparent 28%, hsl(var(--accent-pink) / 0.08) 30%, hsl(var(--accent-pink) / 0.08) 32%, transparent 34%),
+      radial-gradient(circle at 75% 65%, transparent 23%, hsl(var(--accent-rose) / 0.07) 25%, hsl(var(--accent-rose) / 0.07) 27%, transparent 29%),
       /* Heart shapes */
-      radial-gradient(circle at 15% 75%, hsl(var(--accent-coral) / 0.02) 8px, transparent 8px),
-      radial-gradient(circle at 85% 25%, hsl(var(--accent-purple) / 0.02) 6px, transparent 6px);
+      radial-gradient(circle at 15% 75%, hsl(var(--accent-coral) / 0.06) 8px, transparent 8px),
+      radial-gradient(circle at 85% 25%, hsl(var(--accent-purple) / 0.05) 6px, transparent 6px);
     background-size:
       180px 180px,
       220px 220px,
@@ -470,7 +470,38 @@
       75px 75px;
     pointer-events: none;
     z-index: 1;
-    opacity: 0.7;
+    opacity: 0.8;
+  }
+
+  .doodle-enhanced {
+    background-image:
+      /* Large scattered elements */
+      radial-gradient(circle at 8% 15%, hsl(var(--accent-pink) / 0.06) 3px, transparent 3px),
+      radial-gradient(circle at 92% 25%, hsl(var(--accent-rose) / 0.05) 2px, transparent 2px),
+      radial-gradient(circle at 15% 85%, hsl(var(--accent-purple) / 0.06) 2.5px, transparent 2.5px),
+      radial-gradient(circle at 85% 75%, hsl(var(--accent-coral) / 0.05) 2px, transparent 2px),
+      /* Diagonal stripes */
+      repeating-linear-gradient(
+        25deg,
+        transparent,
+        transparent 80px,
+        hsl(var(--accent-pink) / 0.02) 80px,
+        hsl(var(--accent-pink) / 0.02) 82px
+      ),
+      repeating-linear-gradient(
+        -25deg,
+        transparent,
+        transparent 100px,
+        hsl(var(--accent-rose) / 0.015) 100px,
+        hsl(var(--accent-rose) / 0.015) 102px
+      );
+    background-size:
+      120px 120px,
+      140px 140px,
+      110px 110px,
+      130px 130px,
+      200px 200px,
+      180px 180px;
   }
 
   .interactive-gradient-hover:hover {
