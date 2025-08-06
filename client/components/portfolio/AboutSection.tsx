@@ -31,7 +31,7 @@ export default function AboutSection() {
   ];
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 section-bg-secondary relative">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">About Me</h2>
@@ -47,7 +47,7 @@ export default function AboutSection() {
             const colors = ['interactive-purple', 'interactive-cyan', 'interactive-emerald', 'interactive-orange'];
             const currentColor = colors[index % colors.length];
             return (
-              <Card key={index} className={`project-card-interactive border-l-4 border-l-${currentColor}`}>
+              <Card key={index} className={`project-card-interactive border-l-4 border-l-${currentColor} card-bg-enhanced`}>
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-3">
                     <div className={`p-2 bg-${currentColor}/10 rounded-lg glow-on-hover`}>
