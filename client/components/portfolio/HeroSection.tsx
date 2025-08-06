@@ -7,9 +7,9 @@ export default function HeroSection() {
     <section className="min-h-screen flex items-center justify-center hero-enhanced px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       {/* Decorative background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-interactive-purple/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-interactive-cyan/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/2 w-32 h-32 bg-interactive-emerald/10 rounded-full blur-2xl animate-pulse delay-500"></div>
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-interactive-blue/10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-interactive-teal/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 left-1/2 w-32 h-32 bg-interactive-gold/10 rounded-full blur-2xl animate-pulse delay-500"></div>
       </div>
 
       <div className="max-w-4xl mx-auto text-center relative z-10">
@@ -17,7 +17,7 @@ export default function HeroSection() {
           <Badge variant="secondary" className="mb-4 interactive-gradient-hover transition-all duration-300 glow-on-hover">
             Available for Freelance & Full-time
           </Badge>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 bg-gradient-to-r from-interactive-purple to-interactive-cyan bg-clip-text text-transparent">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 bg-gradient-to-r from-interactive-blue to-interactive-teal bg-clip-text text-transparent">
             Full Stack Blockchain Developer
           </h1>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto mb-8 leading-relaxed">
@@ -52,15 +52,15 @@ export default function HeroSection() {
         </div>
 
         <div className="flex gap-6 justify-center">
-          <Button variant="ghost" size="icon" className="hover:scale-110 transition-all duration-300 hover:bg-interactive-purple/20 hover:text-interactive-purple glow-on-hover">
+          <Button variant="ghost" size="icon" className="hover:scale-110 transition-all duration-300 hover:bg-interactive-blue/20 hover:text-interactive-blue glow-on-hover">
             <Github className="h-5 w-5" />
             <span className="sr-only">GitHub</span>
           </Button>
-          <Button variant="ghost" size="icon" className="hover:scale-110 transition-all duration-300 hover:bg-interactive-cyan/20 hover:text-interactive-cyan glow-on-hover">
+          <Button variant="ghost" size="icon" className="hover:scale-110 transition-all duration-300 hover:bg-interactive-teal/20 hover:text-interactive-teal glow-on-hover">
             <Linkedin className="h-5 w-5" />
             <span className="sr-only">LinkedIn</span>
           </Button>
-          <Button variant="ghost" size="icon" className="hover:scale-110 transition-all duration-300 hover:bg-interactive-emerald/20 hover:text-interactive-emerald glow-on-hover">
+          <Button variant="ghost" size="icon" className="hover:scale-110 transition-all duration-300 hover:bg-interactive-gold/20 hover:text-interactive-gold glow-on-hover">
             <ExternalLink className="h-5 w-5" />
             <span className="sr-only">Portfolio</span>
           </Button>

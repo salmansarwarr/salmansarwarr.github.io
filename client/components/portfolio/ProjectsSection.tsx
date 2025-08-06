@@ -78,7 +78,7 @@ export default function ProjectsSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => {
             const IconComponent = project.icon;
-            const colors = ['interactive-purple', 'interactive-cyan', 'interactive-emerald', 'interactive-orange'];
+            const colors = ['interactive-blue', 'interactive-teal', 'interactive-gold', 'interactive-navy'];
             const currentColor = colors[index % colors.length];
             return (
               <Card key={index} className="project-card-interactive border-gradient-hover group card-bg-gradient">
