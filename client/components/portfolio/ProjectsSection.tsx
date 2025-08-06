@@ -78,13 +78,15 @@ export default function ProjectsSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => {
             const IconComponent = project.icon;
+            const colors = ['interactive-purple', 'interactive-cyan', 'interactive-emerald', 'interactive-orange'];
+            const currentColor = colors[index % colors.length];
             return (
-              <Card key={index} className="hover:shadow-xl transition-all duration-300 group">
+              <Card key={index} className="project-card-interactive border-gradient-hover group">
                 <CardHeader>
                   <div className="flex items-start justify-between mb-3">
                     <div className="flex items-center gap-3">
-                      <div className="p-2 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors">
-                        <IconComponent className="h-6 w-6 text-primary" />
+                      <div className={`p-2 bg-${currentColor}/10 rounded-lg group-hover:bg-${currentColor}/20 transition-all duration-300 glow-on-hover`}>
+                        <IconComponent className={`h-6 w-6 text-${currentColor}`} />
                       </div>
                       <div>
                         <CardTitle className="text-xl">{project.title}</CardTitle>
@@ -110,12 +112,12 @@ export default function ProjectsSection() {
                       ))}
                     </div>
                   </div>
-                  
+
                   <div className="space-y-3">
                     <h4 className="font-medium text-sm text-foreground">Technologies:</h4>
                     <div className="flex flex-wrap gap-2">
                       {project.technologies.map((tech, techIndex) => (
-                        <Badge key={techIndex} variant="secondary" className="text-xs">
+                        <Badge key={techIndex} variant="secondary" className="text-xs tech-badge-interactive">
                           {tech}
                         </Badge>
                       ))}
@@ -123,11 +125,11 @@ export default function ProjectsSection() {
                   </div>
 
                   <div className="flex gap-3 pt-4">
-                    <Button variant="outline" size="sm" className="flex-1">
+                    <Button variant="outline" size="sm" className="flex-1 border-gradient-hover transition-all duration-300 hover:scale-105">
                       <Github className="mr-2 h-4 w-4" />
                       Code
                     </Button>
-                    <Button size="sm" className="flex-1">
+                    <Button size="sm" className={`flex-1 bg-${currentColor} hover:bg-${currentColor}/90 glow-on-hover transition-all duration-300`}>
                       <ExternalLink className="mr-2 h-4 w-4" />
                       Demo
                     </Button>
