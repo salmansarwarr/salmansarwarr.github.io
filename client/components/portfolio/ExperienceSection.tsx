@@ -35,58 +35,20 @@ export default function ExperienceSection() {
       ],
     },
     {
-      title: "Full Stack Blockchain Developer",
-      company: "Web3 Innovations",
-      location: "New York, NY",
-      duration: "2021 - 2022",
+      title: "Web3 Developer",
+      company: "ChainVerse",
+      location: "Pakistan (Remote)",
+      duration: "Dec 2023 - July 2024",
       type: "Full-time",
       description:
-        "Developed end-to-end Web3 applications including NFT marketplaces, DAO governance platforms, and wallet integrations.",
+        "Contributed to blockchain-based solutions development within an agile team environment using modern development methodologies.",
       achievements: [
-        "Deployed 20+ smart contracts",
-        "Built NFT marketplace with 1K+ users",
-        "Integrated multiple wallet providers",
-        "Mentored junior developers",
+        "Contributed to blockchain solutions development within a 4-member agile team using Scrum",
+        "Implemented responsive frontend components using React.js with Web3 integrations",
+        "Participated in code reviews and security testing protocols for smart contract deployment",
+        "Enhanced user interaction through advanced Web3 functionality implementation",
       ],
-      technologies: ["React", "Node.js", "Solidity", "Web3.js", "MongoDB"],
-    },
-    {
-      title: "Blockchain Consultant",
-      company: "Freelance",
-      location: "Remote",
-      duration: "2020 - 2021",
-      type: "Contract",
-      description:
-        "Provided blockchain consulting services to startups and enterprises. Specialized in smart contract development, tokenomics design, and Web3 strategy.",
-      achievements: [
-        "Consulted for 15+ projects",
-        "Designed tokenomics for 3 ICOs",
-        "Conducted security audits",
-        "Delivered technical workshops",
-      ],
-      technologies: [
-        "Solidity",
-        "Smart Contracts",
-        "Tokenomics",
-        "Security",
-        "Strategy",
-      ],
-    },
-    {
-      title: "Full Stack Developer",
-      company: "TechStart Inc.",
-      location: "San Francisco, CA",
-      duration: "2019 - 2020",
-      type: "Full-time",
-      description:
-        "Built scalable web applications using modern frontend and backend technologies. Transitioned team to TypeScript and implemented CI/CD pipelines.",
-      achievements: [
-        "Reduced load times by 60%",
-        "Implemented TypeScript migration",
-        "Built automated testing suite",
-        "Designed microservices architecture",
-      ],
-      technologies: ["React", "Node.js", "PostgreSQL", "AWS", "TypeScript"],
+      technologies: ["React.js", "Web3.js", "Smart Contracts", "Agile/Scrum", "Code Reviews"],
     },
   ];
 
