@@ -82,7 +82,7 @@ export default function ExperienceSection() {
   ];
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 section-bg-accent">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Experience & Education</h2>
@@ -94,7 +94,7 @@ export default function ExperienceSection() {
         <div className="space-y-8 mb-16">
           <h3 className="text-2xl font-semibold text-foreground mb-8">Professional Experience</h3>
           {experiences.map((exp, index) => (
-            <Card key={index} className="hover:shadow-lg transition-shadow">
+            <Card key={index} className="hover:shadow-lg transition-shadow card-bg-enhanced project-card-interactive">
               <CardHeader>
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                   <div>
@@ -156,7 +156,7 @@ export default function ExperienceSection() {
           <h3 className="text-2xl font-semibold text-foreground mb-8">Education</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {education.map((edu, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow">
+              <Card key={index} className="hover:shadow-lg transition-shadow card-bg-gradient glow-on-hover">
                 <CardHeader>
                   <CardTitle className="text-lg">{edu.degree}</CardTitle>
                   <CardDescription className="text-base">
