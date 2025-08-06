@@ -12,36 +12,36 @@ export default function AboutSection() {
   const expertise = [
     {
       icon: Code,
-      title: "Smart Contract Development",
+      title: "Blockchain Development",
       description:
-        "Expert in Solidity, Vyper, and smart contract security best practices. Built and audited 50+ smart contracts.",
-      technologies: ["Solidity", "Vyper", "Hardhat", "Foundry", "OpenZeppelin"],
+        "Expert in Ethereum, Solana, and Polkadot development. Built production-ready dApps with smart contracts handling $500K+ in transaction volume.",
+      technologies: ["Solidity", "Rust", "Hardhat", "Anchor", "Substrate"],
     },
     {
       icon: Globe,
       title: "Frontend Development",
       description:
-        "Creating intuitive Web3 interfaces with modern frameworks. Specialized in connecting DApps to various blockchains.",
-      technologies: ["React", "Next.js", "TypeScript", "Web3.js", "Ethers.js"],
+        "Creating intuitive Web3 interfaces with React.js and Next.js. Specialized in wallet integration and user onboarding optimization.",
+      technologies: ["React.js", "Next.js", "TypeScript", "MetaMask", "Phantom"],
     },
     {
       icon: Database,
-      title: "Backend & Infrastructure",
+      title: "Backend & Database",
       description:
-        "Building scalable backend systems and blockchain infrastructure. Experience with cloud deployment and DevOps.",
-      technologies: ["Node.js", "Express", "PostgreSQL", "AWS", "Docker"],
+        "Building scalable backend systems with modern frameworks. Experience with various databases and authentication systems.",
+      technologies: ["Node.js", "Express.js", "Nest.js", "PostgreSQL", "MongoDB"],
     },
     {
       icon: Shield,
-      title: "DeFi & Security",
+      title: "Testing & Deployment",
       description:
-        "Deep understanding of DeFi protocols, yield farming, and blockchain security. Focused on building secure financial applications.",
+        "Rigorous testing protocols and deployment strategies. Zero security incidents through comprehensive testing and code reviews.",
       technologies: [
-        "DeFi",
-        "Yield Farming",
-        "Security Audits",
-        "MEV",
-        "Flash Loans",
+        "Hardhat",
+        "Jest",
+        "AWS",
+        "Vercel",
+        "IPFS",
       ],
     },
   ];
