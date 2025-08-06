@@ -36,8 +36,14 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-muted/50 border-t">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <footer className="footer-bg-rich border-t border-border/30 relative overflow-hidden">
+      {/* Decorative background elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-0 left-1/4 w-48 h-48 bg-interactive-purple/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-1/4 w-48 h-48 bg-interactive-cyan/5 rounded-full blur-3xl"></div>
+      </div>
+
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="space-y-4">
@@ -48,7 +54,7 @@ export default function Footer() {
               <span className="font-bold text-lg text-foreground">BlockchainDev</span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Full Stack Blockchain Developer specializing in DeFi, smart contracts, 
+              Full Stack Blockchain Developer specializing in DeFi, smart contracts,
               and Web3 applications. Building the future of decentralized technology.
             </p>
             <div className="flex gap-2">
