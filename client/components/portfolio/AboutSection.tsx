@@ -54,9 +54,9 @@ export default function AboutSection() {
             About Me
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            With 5+ years of experience in full-stack development and 3+ years
-            specializing in blockchain technology, I help businesses transition
-            to Web3 and build innovative decentralized solutions.
+            With 3+ years of hands-on experience in full-stack and decentralized application development,
+            I specialize in building scalable blockchain solutions across Ethereum, Solana, and Polkadot ecosystems
+            with a passion for clean code, performance optimization, and user-centric design.
           </p>
         </div>
 
