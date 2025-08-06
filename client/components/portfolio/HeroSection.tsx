@@ -25,15 +25,23 @@ export default function HeroSection() {
           </h1>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto mb-8 leading-relaxed">
             Enthusiastic and solutions-driven Blockchain Developer with
-            <span className="text-primary font-semibold"> 3+ years of hands-on experience</span>
-            {" "}in
-            <span className="text-primary font-semibold"> full-stack and dApp development</span>
-            . Proven expertise in building and deploying smart contracts, integrating Web3 technologies, and creating scalable blockchain solutions across
+            <span className="text-primary font-semibold">
+              {" "}
+              3+ years of hands-on experience
+            </span>{" "}
+            in
+            <span className="text-primary font-semibold">
+              {" "}
+              full-stack and dApp development
+            </span>
+            . Proven expertise in building and deploying smart contracts,
+            integrating Web3 technologies, and creating scalable blockchain
+            solutions across
             <span className="text-primary font-semibold">
               {" "}
               Ethereum, Solana, and Polkadot
-            </span>
-            {" "}ecosystems.
+            </span>{" "}
+            ecosystems.
           </p>
         </div>
 

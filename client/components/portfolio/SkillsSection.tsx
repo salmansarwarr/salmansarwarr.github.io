@@ -12,8 +12,8 @@ export default function SkillsSection() {
         { name: "Polkadot (Substrate)", level: 85 },
         { name: "Hardhat/Truffle", level: 92 },
         { name: "Smart Contract Testing", level: 88 },
-        { name: "Web3 Integration", level: 90 }
-      ]
+        { name: "Web3 Integration", level: 90 },
+      ],
     },
     {
       title: "Frontend Development",
@@ -23,8 +23,8 @@ export default function SkillsSection() {
         { name: "TypeScript", level: 90 },
         { name: "Redux Toolkit", level: 85 },
         { name: "Web3 Wallets", level: 88 },
-        { name: "Responsive Design", level: 90 }
-      ]
+        { name: "Responsive Design", level: 90 },
+      ],
     },
     {
       title: "Backend & Database",
@@ -34,8 +34,8 @@ export default function SkillsSection() {
         { name: "Nest.js", level: 82 },
         { name: "PostgreSQL", level: 85 },
         { name: "MongoDB", level: 88 },
-        { name: "Prisma ORM", level: 80 }
-      ]
+        { name: "Prisma ORM", level: 80 },
+      ],
     },
     {
       title: "Testing & Deployment",
@@ -45,16 +45,16 @@ export default function SkillsSection() {
         { name: "AWS", level: 80 },
         { name: "Vercel/Netlify", level: 92 },
         { name: "IPFS/Pinata", level: 85 },
-        { name: "GitHub", level: 95 }
-      ]
-    }
+        { name: "GitHub", level: 95 },
+      ],
+    },
   ];
 
   const certifications = [
     "Ethereum Developer Degree - LearnWeb3.io",
     "Solana Blockchain Developer Bootcamp - Udemy",
     "Polkadot & Substrate Development - RiseIn",
-    "Anryton Blockchain Hackathon - 2nd Position Winner"
+    "Anryton Blockchain Hackathon - 2nd Position Winner",
   ];
 
   return (

@@ -48,7 +48,13 @@ export default function ExperienceSection() {
         "Participated in code reviews and security testing protocols for smart contract deployment",
         "Enhanced user interaction through advanced Web3 functionality implementation",
       ],
-      technologies: ["React.js", "Web3.js", "Smart Contracts", "Agile/Scrum", "Code Reviews"],
+      technologies: [
+        "React.js",
+        "Web3.js",
+        "Smart Contracts",
+        "Agile/Scrum",
+        "Code Reviews",
+      ],
     },
   ];
 
@@ -57,14 +63,14 @@ export default function ExperienceSection() {
       degree: "Bachelor of Science in Computer Science",
       school: "NED University of Engineering & Technology, Karachi",
       year: "Sep 2021 - Sep 2025",
-      honors: "CGPA: 3.44 / 4.0"
+      honors: "CGPA: 3.44 / 4.0",
     },
     {
       degree: "Ethereum Developer Degree",
       school: "LearnWeb3.io",
       year: "2024",
-      honors: "Certified"
-    }
+      honors: "Certified",
+    },
   ];
 
   return (

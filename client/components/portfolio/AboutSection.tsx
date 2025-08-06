@@ -22,27 +22,33 @@ export default function AboutSection() {
       title: "Frontend Development",
       description:
         "Creating intuitive Web3 interfaces with React.js and Next.js. Specialized in wallet integration and user onboarding optimization.",
-      technologies: ["React.js", "Next.js", "TypeScript", "MetaMask", "Phantom"],
+      technologies: [
+        "React.js",
+        "Next.js",
+        "TypeScript",
+        "MetaMask",
+        "Phantom",
+      ],
     },
     {
       icon: Database,
       title: "Backend & Database",
       description:
         "Building scalable backend systems with modern frameworks. Experience with various databases and authentication systems.",
-      technologies: ["Node.js", "Express.js", "Nest.js", "PostgreSQL", "MongoDB"],
+      technologies: [
+        "Node.js",
+        "Express.js",
+        "Nest.js",
+        "PostgreSQL",
+        "MongoDB",
+      ],
     },
     {
       icon: Shield,
       title: "Testing & Deployment",
       description:
         "Rigorous testing protocols and deployment strategies. Zero security incidents through comprehensive testing and code reviews.",
-      technologies: [
-        "Hardhat",
-        "Jest",
-        "AWS",
-        "Vercel",
-        "IPFS",
-      ],
+      technologies: ["Hardhat", "Jest", "AWS", "Vercel", "IPFS"],
     },
   ];
 
@@ -54,9 +60,11 @@ export default function AboutSection() {
             About Me
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            With 3+ years of hands-on experience in full-stack and decentralized application development,
-            I specialize in building scalable blockchain solutions across Ethereum, Solana, and Polkadot ecosystems
-            with a passion for clean code, performance optimization, and user-centric design.
+            With 3+ years of hands-on experience in full-stack and decentralized
+            application development, I specialize in building scalable
+            blockchain solutions across Ethereum, Solana, and Polkadot
+            ecosystems with a passion for clean code, performance optimization,
+            and user-centric design.
           </p>
         </div>
 

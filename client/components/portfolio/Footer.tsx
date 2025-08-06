@@ -56,8 +56,9 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Blockchain & Web Developer with 3+ years of experience specializing in
-              Ethereum, Solana, and Polkadot ecosystems. Building scalable dApps and smart contracts.
+              Blockchain & Web Developer with 3+ years of experience
+              specializing in Ethereum, Solana, and Polkadot ecosystems.
+              Building scalable dApps and smart contracts.
             </p>
             <div className="flex gap-2">
               {socialLinks.map((link, index) => {
@@ -128,9 +129,7 @@ export default function Footer() {
         <Separator className="my-8" />
 
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-          <div>
-            © {currentYear} Sulman Sarwar. All rights reserved.
-          </div>
+          <div>© {currentYear} Sulman Sarwar. All rights reserved.</div>
           <div className="flex gap-6">
             <button className="hover:text-primary transition-colors">
               Privacy Policy

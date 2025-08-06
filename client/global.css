@@ -306,7 +306,7 @@
   }
 
   .blockchain-bg {
-    background-image: url('https://cdn.builder.io/api/v1/image/assets%2F2be8b050cbbe45279c2e5cadd02c8289%2Ff8b4729a7fdb4e149088f3fb64fd33e8?format=webp&width=800');
+    background-image: url("https://cdn.builder.io/api/v1/image/assets%2F2be8b050cbbe45279c2e5cadd02c8289%2Ff8b4729a7fdb4e149088f3fb64fd33e8?format=webp&width=800");
     background-size: 400px 400px;
     background-repeat: repeat;
     background-position: 0 0;
@@ -314,7 +314,7 @@
   }
 
   .blockchain-bg::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;

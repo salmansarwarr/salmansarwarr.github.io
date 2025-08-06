@@ -17,26 +17,26 @@ export default function ContactSection() {
       icon: Mail,
       label: "Email",
       value: "muhammadsalmansarwar32@gmail.com",
-      href: "mailto:muhammadsalmansarwar32@gmail.com"
+      href: "mailto:muhammadsalmansarwar32@gmail.com",
     },
     {
       icon: Phone,
       label: "Phone",
       value: "+92 315 0259301",
-      href: "tel:+923150259301"
+      href: "tel:+923150259301",
     },
     {
       icon: MapPin,
       label: "Location",
       value: "Karachi, Pakistan",
-      href: "#"
+      href: "#",
     },
     {
       icon: Clock,
       label: "Timezone",
       value: "PKT (UTC+5)",
-      href: "#"
-    }
+      href: "#",
+    },
   ];
 
   const services = [
