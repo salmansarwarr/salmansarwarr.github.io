@@ -52,13 +52,12 @@ export default function Footer() {
                 <Code className="h-6 w-6 text-interactive-pink" />
               </div>
               <span className="font-bold text-lg bg-gradient-to-r from-interactive-pink to-interactive-rose bg-clip-text text-transparent">
-                BlockchainDev
+                Sulman Sarwar
               </span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Full Stack Blockchain Developer specializing in DeFi, smart
-              contracts, and Web3 applications. Building the future of
-              decentralized technology.
+              Blockchain & Web Developer with 3+ years of experience specializing in
+              Ethereum, Solana, and Polkadot ecosystems. Building scalable dApps and smart contracts.
             </p>
             <div className="flex gap-2">
               {socialLinks.map((link, index) => {
