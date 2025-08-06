@@ -45,7 +45,7 @@ export default function Navigation() {
               <Code className="h-6 w-6 text-interactive-pink" />
             </div>
             <span className="font-bold text-lg bg-gradient-to-r from-interactive-pink to-interactive-rose bg-clip-text text-transparent">
-              BlockchainDev
+              Sulman Sarwar
             </span>
           </div>
 

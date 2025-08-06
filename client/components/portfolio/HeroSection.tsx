@@ -21,19 +21,19 @@ export default function HeroSection() {
             Available for Freelance & Full-time
           </Badge>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 bg-gradient-to-r from-interactive-pink to-interactive-rose bg-clip-text text-transparent">
-            Full Stack Blockchain Developer
+            Blockchain & Web Developer
           </h1>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto mb-8 leading-relaxed">
-            Building the future of decentralized applications with expertise in
-            <span className="text-primary font-semibold"> smart contracts</span>
-            ,<span className="text-primary font-semibold"> DeFi protocols</span>
-            , and
+            Enthusiastic and solutions-driven Blockchain Developer with
+            <span className="text-primary font-semibold"> 3+ years of hands-on experience</span>
+            {" "}in
+            <span className="text-primary font-semibold"> full-stack and dApp development</span>
+            . Proven expertise in building and deploying smart contracts, integrating Web3 technologies, and creating scalable blockchain solutions across
             <span className="text-primary font-semibold">
               {" "}
-              Web3 infrastructure
+              Ethereum, Solana, and Polkadot
             </span>
-            . Passionate about creating innovative solutions that bridge
-            traditional finance with blockchain technology.
+            {" "}ecosystems.
           </p>
         </div>
 
