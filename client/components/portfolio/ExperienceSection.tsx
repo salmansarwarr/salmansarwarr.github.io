@@ -65,12 +65,6 @@ export default function ExperienceSection() {
       year: "Sep 2021 - Sep 2025",
       honors: "CGPA: 3.44 / 4.0",
     },
-    {
-      degree: "Ethereum Developer Degree",
-      school: "LearnWeb3.io",
-      year: "2024",
-      honors: "Certified",
-    },
   ];
 
   return (
@@ -167,7 +161,7 @@ export default function ExperienceSection() {
           <h3 className="text-2xl font-semibold text-foreground mb-8">
             Education
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 gap-6">
             {education.map((edu, index) => (
               <Card
                 key={index}

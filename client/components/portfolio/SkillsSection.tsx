@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
+import { ExternalLink } from "lucide-react";
 
 export default function SkillsSection() {
   const skillCategories = [
@@ -51,10 +52,10 @@ export default function SkillsSection() {
   ];
 
   const certifications = [
-    "Ethereum Developer Degree - LearnWeb3.io",
-    "Solana Blockchain Developer Bootcamp - Udemy",
-    "Polkadot & Substrate Development - RiseIn",
-    "Anryton Blockchain Hackathon - 2nd Position Winner",
+    {title: "Ethereum Developer Degree - LearnWeb3.io", link: 'https://opensea.io/item/matic/0x60f028C82f9f3bF71e0C13fE9e8E7f916b345C00/492323'},
+    {title: "Solana Blockchain Developer Bootcamp - Udemy", link: 'https://www.udemy.com/certificate/UC-cf2a3838-ddf2-40fb-a9bc-42ad3e233460/?fbclid=IwZXh0bgNhZW0CMTEAAR0yupAiXKs6rLy2x2D7-NvIJvI0TQL2JJ--6Bgd-bTHlidwZHbqPQRsErE_aem_AZFScVQnjKwUb3w6b0S9dDRGfCm0joY4yhZFUoRt1bISrvMIV_Aepd1gNz5R_mLcLgwSPci6sfIQGkk2HJFAAjtn'},
+    {title: "Polkadot & Substrate Development - RiseIn", link: 'https://www.risein.com/certificates/9imPP-d9'},
+    {title: "Anryton Blockchain Hackathon - 2nd Position Winner", link: 'https://www.linkedin.com/posts/mmubashirkhan_csitneduet-blockchaininnovation-web3developers-activity-7301320903244627969-Gyjg?utm_source=share&utm_medium=member_desktop&rcm=ACoAADyraNgBCXFEuGCkuofHiXlCTbYFHCA-j8A'},
   ];
 
   return (
@@ -100,7 +101,7 @@ export default function SkillsSection() {
           ))}
         </div>
 
-        <Card className="card-bg-enhanced interactive-gradient-hover glow-on-hover">
+        <Card className="card-bg-enhanced interactive-gradient-hover transition-all glow-on-hover">
           <CardHeader>
             <CardTitle className="text-center text-xl">
               Certifications & Achievements
@@ -109,13 +110,17 @@ export default function SkillsSection() {
           <CardContent>
             <div className="flex flex-wrap gap-3 justify-center">
               {certifications.map((cert, index) => (
+                <>                
                 <Badge
                   key={index}
                   variant="secondary"
-                  className="text-sm py-2 px-4"
+                  onClick={() => window.open(cert.link, '_blank')}
+                  className="text-sm py-2 px-4 cursor-pointer"
                 >
-                  {cert}
+                  {cert.title}
+                  <ExternalLink size={16} className="ml-2"/>
                 </Badge>
+                </>
               ))}
             </div>
           </CardContent>

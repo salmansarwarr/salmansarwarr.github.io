@@ -22,10 +22,12 @@ export default function Footer() {
 
   const services = [
     "Smart Contract Development",
-    "DeFi Protocol Design",
+    "DeFi",
     "Web3 Frontend Development",
+    "Solana Projects",
     "Blockchain Consultation",
     "Security Audits",
+    "Backend Development",
   ];
 
   const scrollToSection = (href: string) => {
@@ -112,31 +114,22 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Mail className="h-4 w-4" />
-                <span>muhammadsalmansarwar32@gmail.com</span>
+                <span>salmansarwarrdev@gmail.com</span>
               </div>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Globe className="h-4 w-4" />
                 <span>Karachi, Pakistan</span>
               </div>
             </div>
-            <Button className="w-full sm:w-auto">
+            <Button
+              onClick={() =>
+                window.open("mailto:muhammadsalmansarwar32@gmail.com", "_blank")
+              }
+              className="w-full sm:w-auto"
+            >
               <Mail className="mr-2 h-4 w-4" />
               Start a Project
             </Button>
-          </div>
-        </div>
-
-        <Separator className="my-8" />
-
-        <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-          <div>© {currentYear} Sulman Sarwar. All rights reserved.</div>
-          <div className="flex gap-6">
-            <button className="hover:text-primary transition-colors">
-              Privacy Policy
-            </button>
-            <button className="hover:text-primary transition-colors">
-              Terms of Service
-            </button>
           </div>
         </div>
       </div>

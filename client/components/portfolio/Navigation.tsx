@@ -32,11 +32,7 @@ export default function Navigation() {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled
-          ? "nav-bg-glass shadow-lg border-b border-border/20"
-          : "bg-transparent"
-      }`}
+      className={`fixed top-0 w-full z-50 transition-all duration-300 nav-bg-glass shadow-lg border-b border-border/20`}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
@@ -64,6 +60,9 @@ export default function Navigation() {
 
           <div className="hidden md:flex items-center gap-3">
             <Button
+              onClick={() =>
+                window.open("https://github.com/salmansarwarr", "_blank")
+              }
               variant="ghost"
               size="icon"
               className="hover:bg-interactive-pink/20 hover:text-interactive-pink glow-on-hover transition-all duration-300"
@@ -71,6 +70,12 @@ export default function Navigation() {
               <Github className="h-4 w-4" />
             </Button>
             <Button
+              onClick={() =>
+                window.open(
+                  "https://www.linkedin.com/in/-salmansarwar/",
+                  "_blank",
+                )
+              }
               variant="ghost"
               size="icon"
               className="hover:bg-interactive-rose/20 hover:text-interactive-rose glow-on-hover transition-all duration-300"
@@ -78,6 +83,9 @@ export default function Navigation() {
               <Linkedin className="h-4 w-4" />
             </Button>
             <Button
+              onClick={() =>
+                window.open("mailto:muhammadsalmansarwar32@gmail.com", "_blank")
+              }
               size="sm"
               className="interactive-gradient glow-on-hover border-0 transition-all duration-300"
             >
@@ -105,14 +113,23 @@ export default function Navigation() {
                   </button>
                 ))}
                 <div className="flex gap-2 pt-4">
-                  <Button variant="ghost" size="icon">
+                  <Button               onClick={() =>
+                window.open("https://github.com/salmansarwarr", "_blank")
+              } variant="ghost" size="icon">
                     <Github className="h-4 w-4" />
                   </Button>
-                  <Button variant="ghost" size="icon">
+                  <Button               onClick={() =>
+                window.open(
+                  "https://www.linkedin.com/in/-salmansarwar/",
+                  "_blank",
+                )
+              } variant="ghost" size="icon">
                     <Linkedin className="h-4 w-4" />
                   </Button>
                 </div>
-                <Button className="w-full">
+                <Button               onClick={() =>
+                window.open("mailto:muhammadsalmansarwar32@gmail.com", "_blank")
+              } className="w-full">
                   <Mail className="mr-2 h-4 w-4" />
                   Contact Me
                 </Button>

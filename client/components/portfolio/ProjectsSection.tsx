@@ -17,90 +17,88 @@ import {
 } from "lucide-react";
 
 export default function ProjectsSection() {
-  const projects = [
-    {
-      title: "DeFiYield Protocol",
-      description:
-        "A decentralized yield farming platform with automated portfolio rebalancing and risk management. Features include multi-strategy yield optimization, liquidity provision across DEXs, and governance token mechanisms.",
-      icon: TrendingUp,
-      technologies: ["Solidity", "React", "Web3.js", "Node.js", "PostgreSQL"],
-      features: [
-        "$2M+ TVL",
-        "Gas-optimized contracts",
-        "Multi-chain support",
-        "Automated rebalancing",
-      ],
-      github: "#",
-      demo: "#",
-      status: "Live Production",
-    },
-    {
-      title: "CryptoSecure Wallet",
-      description:
-        "A non-custodial multi-signature wallet with advanced security features including hardware wallet integration, social recovery, and transaction batching for gas optimization.",
-      icon: Shield,
-      technologies: [
-        "Solidity",
-        "TypeScript",
-        "Next.js",
-        "Ethers.js",
-        "Firebase",
-      ],
-      features: [
-        "Multi-sig security",
-        "Hardware wallet support",
-        "Social recovery",
-        "Gas optimization",
-      ],
-      github: "#",
-      demo: "#",
-      status: "Beta Testing",
-    },
-    {
-      title: "NFT Marketplace Pro",
-      description:
-        "A feature-rich NFT marketplace supporting ERC-721 and ERC-1155 tokens with royalty management, batch minting, and advanced filtering. Includes auction mechanisms and collection management.",
-      icon: Coins,
-      technologies: ["Solidity", "React", "IPFS", "Graph Protocol", "MongoDB"],
-      features: [
-        "Royalty management",
-        "Batch operations",
-        "Advanced filters",
-        "Auction system",
-      ],
-      github: "#",
-      demo: "#",
-      status: "Live Production",
-    },
-    {
-      title: "DAO Governance Platform",
-      description:
-        "A comprehensive governance platform for DAOs with proposal creation, voting mechanisms, treasury management, and delegation features. Supports quadratic voting and token-weighted decisions.",
-      icon: Users,
-      technologies: [
-        "Solidity",
-        "React",
-        "Graph Protocol",
-        "TypeScript",
-        "Redis",
-      ],
-      features: [
-        "Quadratic voting",
-        "Treasury management",
-        "Delegation system",
-        "Analytics dashboard",
-      ],
-      github: "#",
-      demo: "#",
-      status: "Development",
-    },
-  ];
+    const projects = [
+        {
+          title: "CoinBoom",
+          description:
+            "A comprehensive cryptocurrency tracking platform that identifies trending tokens and provides real-time market data. Features advanced filtering, promoted coins section, and multi-chain support for discovering the next crypto boom opportunities.",
+          icon: TrendingUp,
+          technologies: ["React", "Node.js", "Dexscreener", "Mongodb", "Coingecko"],
+          features: [
+            "Real-time price tracking",
+            "Multi-chain support",
+            "Trending algorithm",
+            "Promoted listings",
+          ],
+          github: "https://github.com/salmansarwarr/coinboom",
+          demo: "https://coinboom.net",
+          status: "Live Production",
+        },
+        {
+          title: "Horsely NFT Collection",
+          description:
+            "An equestrian-themed NFT marketplace featuring horse genetics and fractional ownership. Each NFT contains unique genetic data for virtual breeding, competitions, and immersive equestrian experiences with ERC-721 tokens on Ethereum.",
+          icon: Users,
+          technologies: [
+            "Solidity",
+            "Next.js",
+            "IPFS",
+            "Ethereum",
+            "TypeScript",
+          ],
+          features: [
+            "Genetic data system",
+            "Fractional ownership",
+            "Breeding simulation",
+            "Virtual competitions",
+          ],
+          github: "https://github.com/salmansarwarr/horsly-server",
+          demo: "https://horselyworld.com",
+          status: "Live Production",
+        },
+        {
+          title: "Forge3 Talent Platform",
+          description:
+            "A Solana talent marketplace connecting developers with crypto projects. Focusing on DeFi, NFT, and blockchain development expertise.",
+          icon: Shield,
+          technologies: ["React", "Anchor", "Rust", "Solana", "TypeScript"],
+          features: [
+            "Decentralized Escrow",
+            "Web3 talent pool",
+            "Smart matching",
+            "Project collaboration",
+          ],
+          github: "https://forge3.co",
+          demo: "https://forge3.co",
+          status: "Live Production",
+        },
+        {
+          title: "Passve",
+          description:
+            "A modern Staking & APY application with frontend providing seamless user experiences. Built with contemporary web technologies and optimized for performance in the decentralized ecosystem.",
+          icon: Coins,
+          technologies: [
+            "React",
+            "Solidity",
+            "Web3.js",
+            "Node.js",
+            "Wagmi",
+          ],
+          features: [
+            "Modern UI/UX",
+            "Staking & APY",
+            "Performance optimized",
+            "Cross-platform support",
+          ],
+          github: "https://github.com/salmansarwarr/passve",
+          demo: "https://passve.com",
+          status: "Live Production",
+        },
+      ];
 
   const stats = [
     { label: "Projects Completed", value: "25+" },
     { label: "Smart Contracts Deployed", value: "50+" },
-    { label: "Total Value Locked", value: "$5M+" },
-    { label: "Active Users", value: "10K+" },
   ];
 
   return (
@@ -116,7 +114,7 @@ export default function ProjectsSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
           {stats.map((stat, index) => (
             <Card
               key={index}
@@ -213,13 +211,25 @@ export default function ProjectsSection() {
                       variant="outline"
                       size="sm"
                       className="flex-1 border-gradient-hover transition-all duration-300 hover:scale-105"
+                      onClick={() =>
+                        window.open(
+                          project.github,
+                          "_blank",
+                        )
+                      }
                     >
                       <Github className="mr-2 h-4 w-4" />
                       Code
                     </Button>
                     <Button
                       size="sm"
-                      className={`flex-1 bg-${currentColor} hover:bg-${currentColor}/90 glow-on-hover transition-all duration-300`}
+                      className={`flex-1 bg-interactive-pink hover:bg-${currentColor}/90 glow-on-hover transition-all duration-300`}
+                      onClick={() =>
+                        window.open(
+                          project.demo,
+                          "_blank",
+                        )
+                      }
                     >
                       <ExternalLink className="mr-2 h-4 w-4" />
                       Demo
@@ -232,7 +242,13 @@ export default function ProjectsSection() {
         </div>
 
         <div className="text-center mt-12">
-          <Button variant="outline" size="lg">
+          <Button
+            onClick={() =>
+              window.open("https://github.com/salmansarwarr", "_blank")
+            }
+            variant="outline"
+            size="lg"
+          >
             <Github className="mr-2 h-4 w-4" />
             View All Projects on GitHub
           </Button>

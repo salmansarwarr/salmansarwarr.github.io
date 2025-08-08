@@ -1,3 +1,5 @@
+import { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import {
   Card,
   CardContent,
@@ -9,15 +11,19 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
-import { Mail, MessageCircle, Phone, MapPin, Clock, Send } from "lucide-react";
+import { Mail, MessageCircle, Phone, MapPin, Clock, Send, CheckCircle, AlertCircle } from "lucide-react";
 
 export default function ContactSection() {
+  const form = useRef<HTMLFormElement>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
   const contactInfo = [
     {
       icon: Mail,
       label: "Email",
-      value: "muhammadsalmansarwar32@gmail.com",
-      href: "mailto:muhammadsalmansarwar32@gmail.com",
+      value: "salmansarwardev@gmail.com",
+      href: "mailto:salmansarwardev@gmail.com",
     },
     {
       icon: Phone,
@@ -41,12 +47,51 @@ export default function ContactSection() {
 
   const services = [
     "Smart Contract Development",
-    "DeFi Protocol Design",
+    "DeFi",
     "Web3 Frontend Development",
+    "Solana Projects",
     "Blockchain Consultation",
     "Security Audits",
-    "Technical Architecture",
+    "Backend Development",
   ];
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    
+    if (!form.current) return;
+
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
+    try {
+      const result = await emailjs.sendForm(
+        import.meta.env.VITE_SERVICE_ID, 
+        import.meta.env.VITE_TEMPLATE_ID, 
+        form.current,
+        import.meta.env.VITE_PUBLIC_KEY 
+      );
+
+      if (result.status === 200) {
+        setSubmitStatus('success');
+        form.current.reset();
+        
+        // Clear success message after 5 seconds
+        setTimeout(() => {
+          setSubmitStatus('idle');
+        }, 5000);
+      }
+    } catch (error) {
+      console.error('EmailJS Error:', error);
+      setSubmitStatus('error');
+      
+      // Clear error message after 5 seconds
+      setTimeout(() => {
+        setSubmitStatus('idle');
+      }, 5000);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 contact-bg-special blockchain-bg relative">
@@ -144,68 +189,122 @@ export default function ContactSection() {
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <form ref={form} onSubmit={handleSubmit} className="space-y-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="space-y-2">
+                    <label
+                      htmlFor="name"
+                      className="text-sm font-medium text-foreground"
+                    >
+                      Name *
+                    </label>
+                    <Input 
+                      id="name" 
+                      name="name"
+                      placeholder="Your name" 
+                      required
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <label
+                      htmlFor="email"
+                      className="text-sm font-medium text-foreground"
+                    >
+                      Email *
+                    </label>
+                    <Input 
+                      id="email" 
+                      name="email"
+                      type="email" 
+                      placeholder="your@email.com"
+                      required
+                    />
+                  </div>
+                </div>
+
                 <div className="space-y-2">
                   <label
-                    htmlFor="name"
+                    htmlFor="subject"
                     className="text-sm font-medium text-foreground"
                   >
-                    Name
+                    Subject *
                   </label>
-                  <Input id="name" placeholder="Your name" />
+                  <Input 
+                    id="subject" 
+                    name="subject"
+                    placeholder="Project consultation"
+                    required
+                  />
                 </div>
+
                 <div className="space-y-2">
                   <label
-                    htmlFor="email"
+                    htmlFor="budget"
                     className="text-sm font-medium text-foreground"
                   >
-                    Email
+                    Project Budget (Optional)
                   </label>
-                  <Input id="email" type="email" placeholder="your@email.com" />
+                  <Input 
+                    id="budget" 
+                    name="budget"
+                    placeholder="$10,000 - $50,000"
+                  />
                 </div>
-              </div>
 
-              <div className="space-y-2">
-                <label
-                  htmlFor="subject"
-                  className="text-sm font-medium text-foreground"
+                <div className="space-y-2">
+                  <label
+                    htmlFor="message"
+                    className="text-sm font-medium text-foreground"
+                  >
+                    Message *
+                  </label>
+                  <Textarea
+                    id="message"
+                    name="message"
+                    placeholder="Tell me about your project, timeline, and requirements..."
+                    className="min-h-[120px]"
+                    required
+                  />
+                </div>
+
+                {/* Status Messages */}
+                {submitStatus === 'success' && (
+                  <div className="flex items-center gap-2 p-4 bg-green-500/10 border border-green-500/20 rounded-lg">
+                    <CheckCircle className="h-5 w-5 text-green-600" />
+                    <p className="text-green-700 dark:text-green-300 font-medium">
+                      Message sent successfully! I'll get back to you soon.
+                    </p>
+                  </div>
+                )}
+
+                {submitStatus === 'error' && (
+                  <div className="flex items-center gap-2 p-4 bg-red-500/10 border border-red-500/20 rounded-lg">
+                    <AlertCircle className="h-5 w-5 text-red-600" />
+                    <p className="text-red-700 dark:text-red-300 font-medium">
+                      Failed to send message. Please try again or email me directly.
+                    </p>
+                  </div>
+                )}
+
+                <Button
+                  type="submit"
+                  className="w-full interactive-gradient glow-on-hover border-0 transition-all duration-300"
+                  size="lg"
+                  disabled={isSubmitting}
                 >
-                  Subject
-                </label>
-                <Input id="subject" placeholder="Project consultation" />
-              </div>
-
-              <div className="space-y-2">
-                <label
-                  htmlFor="budget"
-                  className="text-sm font-medium text-foreground"
-                >
-                  Project Budget (Optional)
-                </label>
-                <Input id="budget" placeholder="$10,000 - $50,000" />
-              </div>
-
-              <div className="space-y-2">
-                <label
-                  htmlFor="message"
-                  className="text-sm font-medium text-foreground"
-                >
-                  Message
-                </label>
-                <Textarea
-                  id="message"
-                  placeholder="Tell me about your project, timeline, and requirements..."
-                  className="min-h-[120px]"
-                />
-              </div>
-
-              <Button
-                className="w-full interactive-gradient glow-on-hover border-0 transition-all duration-300"
-                size="lg"
-              >
-                <Send className="mr-2 h-4 w-4" />
-                Send Message
-              </Button>
+                  {isSubmitting ? (
+                    <div className="flex items-center gap-2">
+                      <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                      Sending...
+                    </div>
+                  ) : (
+                    <>
+                      <Send className="mr-2 h-4 w-4" />
+                      Send Message
+                    </>
+                  )}
+                </Button>
+              </form>
             </CardContent>
           </Card>
         </div>

@@ -118,8 +118,8 @@ export default function AboutSection() {
           })}
         </div>
 
-        <div className="mt-16 interactive-gradient-hover rounded-2xl p-8 text-center border-gradient glow-on-hover">
-          <h3 className="text-2xl font-semibold text-foreground mb-4 interactive-gradient bg-clip-text text-transparent">
+        {/* <div className="mt-16 interactive-gradient-hover rounded-2xl p-8 text-center border-gradient glow-on-hover">
+          <h3 className="text-2xl font-semibold text-foreground mb-4 interactive-gradient bg-clip-text">
             My Mission
           </h3>
           <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
@@ -128,7 +128,7 @@ export default function AboutSection() {
             user experience. I believe in building solutions that are not only
             innovative but also practical and accessible to everyone.
           </p>
-        </div>
+        </div> */}
       </div>
     </section>
   );
