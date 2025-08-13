@@ -1,22 +1,28 @@
 {
-    "headers": [
-      {
-        "source": "/assets/(.*).js",
-        "headers": [
-          {
-            "key": "Content-Type",
-            "value": "text/javascript"
-          }
-        ]
-      },
-      {
-        "source": "/(.*).js",
-        "headers": [
-          {
-            "key": "Content-Type", 
-            "value": "text/javascript"
-          }
-        ]
-      }
-    ]
-  }
+  "build": {
+    "env": {
+      "NPM_CONFIG_PRODUCTION": "false"
+    }
+  },
+  "outputDirectory": "dist/spa",
+  "headers": [
+    {
+      "source": "/assets/(.*).js",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/javascript"
+        }
+      ]
+    },
+    {
+      "source": "/(.*).js",
+      "headers": [
+        {
+          "key": "Content-Type", 
+          "value": "text/javascript"
+        }
+      ]
+    }
+  ]
+}
