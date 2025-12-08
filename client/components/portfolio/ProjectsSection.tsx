@@ -57,6 +57,29 @@ export default function ProjectsSection() {
           status: "Live Production",
         },
         {
+          title: "Nottools Solana",
+          description:
+            "A Web3 platform that offers a Solana-powered wallet, NFT memberships and tokens, and tools to help users create, launch, and manage blockchain projects.",
+          icon: Users,
+          technologies: [
+            "React",
+            "Solana",
+            "Anchor",
+            "Rust",
+            "Node.js",
+          ],
+          features: [
+            "Non-custodial Solana-compatible wallet",
+            "Token & NFT storage and management",
+            "Instant swaps / token trading within wallet",
+            "WalletConnect support for dApp interaction",
+            "Low-fee, fast Solana network transactions"
+          ],
+          github: "https://github.com/salmansarwarr/notttools",
+          demo: "https://noottools.io/",
+          status: "Live Production",
+        },
+        {
           title: "Forge3 Talent Platform",
           description:
             "A Solana talent marketplace connecting developers with crypto projects. Focusing on DeFi, NFT, and blockchain development expertise.",
@@ -70,28 +93,6 @@ export default function ProjectsSection() {
           ],
           github: "https://forge3.co",
           demo: "https://forge3.co",
-          status: "Live Production",
-        },
-        {
-          title: "Passve",
-          description:
-            "A modern Staking & APY application with frontend providing seamless user experiences. Built with contemporary web technologies and optimized for performance in the decentralized ecosystem.",
-          icon: Coins,
-          technologies: [
-            "React",
-            "Solidity",
-            "Web3.js",
-            "Node.js",
-            "Wagmi",
-          ],
-          features: [
-            "Modern UI/UX",
-            "Staking & APY",
-            "Performance optimized",
-            "Cross-platform support",
-          ],
-          github: "https://github.com/salmansarwarr/passve",
-          demo: "https://passve.com",
           status: "Live Production",
         },
       ];
